@@ -1,0 +1,24 @@
+.activities{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.h1{
+    color:#f20f0f;
+    margin: 20px 0 20px 0;
+}
+
+.texts h2{
+    margin:20px 0 10px 0; 
+}
+
+.texts ul li{
+    color:#333333;
+}
+
+.texts{
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    list-style: inside;
+    line-height: 25px;
+}

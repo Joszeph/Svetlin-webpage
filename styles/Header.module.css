@@ -1,0 +1,45 @@
+.topItems {
+    max-width: 1200px;
+    margin: 10px auto;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts a{
+    text-decoration: none;
+    color:#333333;
+  }
+
+  .socialIcons{
+    font-size: 2em;
+    margin-top:10px;
+  }
+
+  .socialIcons a{
+    text-decoration: none;
+    color:#333333;
+    margin-left: 5px;
+  }
+  
+  .navBar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  .contacts{
+    text-align: center;
+  }
+  .topItems {
+    align-items: center;
+  }
+  .navBar{
+    justify-content: space-around;
+  }
+}
+  
