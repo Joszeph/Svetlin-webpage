@@ -67,8 +67,7 @@ export default function ScrollToTop() {
         position: fixed;
         right: 55px;
         top: 895px;
-    }
-    
+    }  
       `}</style>
     </div>
   );
