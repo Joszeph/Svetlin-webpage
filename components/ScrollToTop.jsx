@@ -57,7 +57,7 @@ export default function ScrollToTop() {
     
     @media only screen and (max-width: 640px) {
         .toTop{
-            top: 720px;
+            top: 700px;
             right: 57px;
         }
     }
