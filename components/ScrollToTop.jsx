@@ -57,17 +57,18 @@ export default function ScrollToTop() {
     
     @media only screen and (max-width: 640px) {
         .toTop{
-            top: 595px;
+            top: 720px;
             right: 57px;
         }
     }
 
-    // @media only screen and (max-width: 1132px) {
-    //   .toTop{
-    //     position: fixed;
-    //     right:60px;
-    //     top: 895px;
-    //   }
+    @media only screen and (min-width: 641px) {
+      .toTop{
+        position: fixed;
+        right: 55px;
+        top: 895px;
+    }
+    
       `}</style>
     </div>
   );
