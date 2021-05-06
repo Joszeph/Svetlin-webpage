@@ -1,6 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 
+import styles from '../styles/ContactForm.module.css'
+
 export default function ContactForm() {
 
   function sendEmail(e) {
@@ -16,16 +18,18 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="name" />
-      <label>Email</label>
-      <input type="email" name="email" />
-      <label>Subject</label>
-      <textarea name="subject" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+    <div className={styles.formContainer}>
+    <form className={styles.contactForm} onSubmit={sendEmail}>
+      <label for="name">Имена:</label><br />
+        <input type="text" name="name" placeholder="" required /><br />
+      <label for="email">Email:</label><br />
+        <input type="email" name="email" placeholder="" required/><br />
+      <label for="subject">Относно:</label><br />
+        <input type="text" name="subject" placeholder="" /><br />
+      <label for="message">Съобщение:</label><br />
+        <textarea name="message" placeholder="Съобщение..." required /><br />
+        <input type="submit" value="Изпрати" />
     </form>
+    </div>
   );
 }

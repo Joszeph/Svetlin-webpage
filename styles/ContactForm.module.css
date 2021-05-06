@@ -1,0 +1,61 @@
+.formContainer{
+    box-sizing: border-box;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.contactForm label{
+    color:#333333;
+}
+
+.contactForm input[type=text] {
+    padding: 15px;
+    margin: 10px;
+    width:450px;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    color: #333333;
+}
+
+.contactForm input[type=email] {
+    padding: 15px;
+    margin: 10px;
+    width:450px;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    color: #333333;
+}
+
+
+.contactForm textarea {
+    width:450px;
+    resize: vertical;
+    padding:15px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    height: 60px;
+    margin: 10px;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    color: #333333;
+}
+
+.contactForm input[type=submit]{
+    text-transform: uppercase;
+    background-color: #f20f0f;
+    color: white;
+    border: none;
+    padding: 10px 8px;
+    font-size: 0.6em;
+    font-family: "Comfortaa", cursive;
+    margin:5px 0 0 10px ;
+}
+
