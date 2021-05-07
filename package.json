@@ -12,6 +12,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@googlemaps/js-api-loader": "^1.11.4",
     "babel-plugin-styled-components": "^1.12.0",
     "emailjs-com": "^2.6.4",
     "google-map-react": "^2.1.9",
@@ -19,6 +20,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-google-maps": "^9.4.5",
+    "react-map-gl": "^6.1.13",
+    "react-redux": "^7.2.4",
     "styled-components": "^5.2.3"
   }
 }

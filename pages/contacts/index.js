@@ -2,7 +2,9 @@ import ContactForm from "../../components/ContactForm"
 import Map from "../../components/Map"
 import styles from './contacts.module.css'
 
+
 const Contacts = () => {
+    
     return ( 
         <main>
             <div className={styles.title}>
@@ -20,6 +22,7 @@ const Contacts = () => {
             </section>
         </div>
         </main>
+    
      );
 }
  
