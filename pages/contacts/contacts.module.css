@@ -15,3 +15,16 @@
     color: #f20f0f;
 }
 
+.left{
+    flex-basis: 35%;
+}
+
+.right{
+    flex-basis: 50%;
+}
+
+.mapContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+    
