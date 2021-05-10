@@ -32,7 +32,7 @@ const Footer = () => {
           <Link href="/"><a><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
           <Link href="/"><a><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
           </div>
-          <h4>Copyright 2021 Адвокат Светлин Тодоров – Варна</h4>
+          <h4>Copyright 2021<br/> <span>&#169;</span> Адвокат Светлин Тодоров – Варна</h4>
           <h5>Web Development by Mighty Mint</h5>
         </div>
       </div>

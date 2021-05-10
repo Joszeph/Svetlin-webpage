@@ -55,6 +55,9 @@
     .aboutMe{
         margin: 0 20px;
     }
+    .aboutText{
+        margin-bottom: 30px;
+    }
   }
   
   /* Tablets */
@@ -67,5 +70,8 @@
     }
     .aboutMe{
         margin: 0 20px;
+    }
+    .aboutText{
+        margin-bottom: 30px;
     }
     }
