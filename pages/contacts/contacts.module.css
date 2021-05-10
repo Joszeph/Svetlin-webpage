@@ -28,6 +28,7 @@
 @media only screen and (max-width: 600px) {
     .left{
         flex-basis: 100%;
+        margin-top: 30px;
      }
     .right{
         margin:10px;

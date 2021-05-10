@@ -43,8 +43,8 @@ export default function ScrollToTop() {
       <style jsx>{`
       .toTop{
         position: fixed;
-        right: 360px;
-        top: 895px;
+        right: 50px;
+        bottom: 50px;
         font-size: 2em;
         color:#f20f0f;
         text-decoration: none;
@@ -55,19 +55,12 @@ export default function ScrollToTop() {
         color:#f20f0f;
     }
     
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 1004px) {
         .toTop{
-            top: 700px;
-            right: 57px;
+          right: 10px;
+          bottom: 28px;
         }
-    }
-
-    @media only screen and (min-width: 641px) {
-      .toTop{
-        position: fixed;
-        right: 55px;
-        top: 895px;
-    }  
+    } 
       `}</style>
     </div>
   );

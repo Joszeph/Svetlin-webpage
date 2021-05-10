@@ -223,6 +223,10 @@
     margin-left: 0;
   }
 
+  .mainInfo {
+    margin: 0px auto;
+  }
+
   /* Main - Cards */
   .card {
     margin: 20px 0;
@@ -245,6 +249,15 @@
     flex-basis: 70%;
   }
 
+  .rightList {
+    flex-basis: 50%;
+    margin: 10px 10px;
+  }
+  .leftList{
+    flex-basis: 50%;
+    margin: 10px 10px;
+  }
+
   /* Main - Help Info Section */
   .helpInfo {
     background-size: cover;
@@ -254,6 +267,12 @@
   }
   .contentParSection div {
     margin-top: 30px;
+  }
+  .titlesInfoSection h3{
+    padding: 0 12px;
+  }
+  .titlesInfoSection{
+    margin: 0px 0px 0px 0px;
   }
 
   /* Main - Clients */
@@ -265,6 +284,7 @@
   .clientslogos div {
     margin: 15px 0;
   }
+  
 }
 
 /* Tablets */
