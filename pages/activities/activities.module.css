@@ -22,3 +22,12 @@
     list-style: inside;
     line-height: 25px;
 }
+
+
+@media only screen and (max-width: 1007px) {
+    .h1,
+    .h2,
+    .texts{
+        margin:25px;
+    }
+  }
