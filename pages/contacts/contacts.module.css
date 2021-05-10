@@ -25,4 +25,11 @@
 }
 
 
-    
+@media only screen and (max-width: 600px) {
+    .left{
+        flex-basis: 100%;
+     }
+    .right{
+        margin:10px;
+    }
+}
