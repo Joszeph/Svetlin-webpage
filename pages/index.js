@@ -51,7 +51,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
         <Image src="/box2.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
@@ -60,7 +60,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
         <Image src="/box3.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
@@ -105,7 +105,7 @@ export default function Home() {
           <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">ПОЛЕЗНА ИНФОРМАЦИЯ</h2>
         </div>
         <div className={styles.contentParSection}>
-          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
             <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Имам правен проблем – имам ли нужда от адвокат и как да си избера такъв?</h3>
             <p>
               На всеки един от нас, рано или късно, му се налага да ползва правна помощ.
@@ -116,7 +116,7 @@ export default function Home() {
             </p>
             <button className={styles.btnInfoPar}>научи поевече</button>
           </div>
-          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
           <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Предстои ми да закупя жилище. Имам ли нужда от адвокат и как да избера такъв?</h3>
           <p>
             В живота на всеки човек, рано или късно, настъпва моментът да закупи собствен дом. Това е важна крачка в житейския ни път, а в повечето случаи покупката на жилище е свързана и със значителни разходи, вземането на ипотечни кредити, ангажирането на посредничеството на брокерски фирми и много други фактически и правни дейсвия. Затова е логично да се запитаме – следва ли да ангажирам...
