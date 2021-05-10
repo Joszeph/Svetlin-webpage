@@ -48,6 +48,7 @@ export default function ScrollToTop() {
         font-size: 2em;
         color:#f20f0f;
         text-decoration: none;
+        cursor:pointer;
     }
     
     .toTop a{
