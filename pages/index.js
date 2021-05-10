@@ -1,8 +1,19 @@
+import {useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      // duration : 5000
+    });
+  }, []);
+
   return (
     <main>
     <section className={styles.mainHome}>
@@ -27,10 +38,10 @@ export default function Home() {
       </div>
     </section>
     <section className={styles.quate}>
-      <h2>"Накрая побеждава справедливата кауза"</h2>
+      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">"Накрая побеждава справедливата кауза"</h2>
     </section>
     <section className={styles.cards}>
-      <div className={styles.card}>
+      <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <Image src="/box1.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
@@ -40,7 +51,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className={styles.card}>
+      <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <Image src="/box2.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
@@ -49,7 +60,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className={styles.card}>
+      <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <Image src="/box3.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
@@ -63,7 +74,7 @@ export default function Home() {
     </section>
     <section className={styles.activities}>
       <div className={styles.titleBar}>
-        <div className={styles.title}>
+        <div className={styles.title} data-aos="fade-right">
           <h2>СФЕРИ НА ДЕЙНОСТ</h2>
         </div>
         <div className={styles.redEl}></div>
@@ -90,11 +101,11 @@ export default function Home() {
     </section>
     <section className={styles.helpInfo}>
       <div className={styles.allContent}>
-        <div className={styles.titlesInfoSection}>
-          <h2>ПОЛЕЗНА ИНФОРМАЦИЯ</h2>
+        <div className={styles.titlesInfoSection} >
+          <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">ПОЛЕЗНА ИНФОРМАЦИЯ</h2>
         </div>
         <div className={styles.contentParSection}>
-          <div>
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Имам правен проблем – имам ли нужда от адвокат и как да си избера такъв?</h3>
             <p>
               На всеки един от нас, рано или късно, му се налага да ползва правна помощ.
@@ -105,14 +116,14 @@ export default function Home() {
             </p>
             <button className={styles.btnInfoPar}>научи поевече</button>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Предстои ми да закупя жилище. Имам ли нужда от адвокат и как да избера такъв?</h3>
           <p>
             В живота на всеки човек, рано или късно, настъпва моментът да закупи собствен дом. Това е важна крачка в житейския ни път, а в повечето случаи покупката на жилище е свързана и със значителни разходи, вземането на ипотечни кредити, ангажирането на посредничеството на брокерски фирми и много други фактически и правни дейсвия. Затова е логично да се запитаме – следва ли да ангажирам...
             </p>
             <button className={styles.btnInfoPar}>научи поевече</button>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Що е то „жилищен комплекс от затворен тип“ и има ли почва у нас?</h3>
             <p>
             Напоследък стана особено модерно строителните предприемачи да предлагат за продажба жилища в „комплекси от затворен тип“. Увещанията им са, че бъдещият собственик на такова жилище ще живее в една сигурна, спокойна и уютна среда, далеч от градския шум и мръсотия, а общите части на сградата и дворът, в който е построена, ще бъдат винаги чисти и поддържани. Що е то обаче...
@@ -124,7 +135,7 @@ export default function Home() {
     </section>
     <section className={styles.clients}>
       <div className={styles.titleBar}>
-        <div className={styles.title}>
+        <div className={styles.title} data-aos="fade-right">
           <h2>КЛИЕНТИ</h2>
         </div>
         <div className={styles.redEl}></div>
