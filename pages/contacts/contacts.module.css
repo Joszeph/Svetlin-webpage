@@ -2,8 +2,9 @@
     max-width: 1200px;
     margin:50px auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title{
@@ -16,15 +17,12 @@
 }
 
 .left{
-    flex-basis: 35%;
+   flex-basis: 50%;
 }
 
 .right{
-    flex-basis: 50%;
+    flex-basis: 38%;
 }
 
-.mapContainer{
-    display: flex;
-    justify-content: flex-end;
-}
+
     

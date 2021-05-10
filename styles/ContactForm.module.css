@@ -11,7 +11,7 @@
 
 .contactForm input[type=text] {
     padding: 15px;
-    margin: 14px 0px 20px 10px;
+    margin: 10px 0px 20px 10px;
     width:350px;
     border-top: none;
     border-right: none;
@@ -23,7 +23,7 @@
 
 .contactForm input[type=email] {
     padding: 15px;
-    margin: 14px 0px 20px 10px;
+    margin: 10px 0px 20px 10px;
     width:350px;
     border-top: none;
     border-right: none;
@@ -40,7 +40,7 @@
     padding:15px;
     box-shadow:4px 4px 10px rgba(0,0,0,0.06);
     height: 60px;
-    margin: 14px 0px 20px 10px;
+    margin: 10px 0px 20px 10px;
     border-top: none;
     border-right: none;
     background-color: transparent;
