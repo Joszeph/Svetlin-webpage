@@ -1,9 +1,13 @@
 .topItems {
     max-width: 1200px;
     margin: 10px auto;
-    align-items: flex-end;
     display: flex;
     flex-direction: column;
+  }
+
+  .contacts{
+    display: flex;
+    justify-content: space-between;
   }
 
   .contacts a{
@@ -14,6 +18,7 @@
   .socialIcons{
     font-size: 2em;
     margin-top:10px;
+    text-align: end;
   }
 
   .socialIcons a{
@@ -33,7 +38,10 @@
   
   @media only screen and (max-width: 1004px) {
   .contacts{
-    text-align: center;
+    text-align: left;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin:5px;
   }
   .topItems {
     align-items: center;

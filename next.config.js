@@ -14,6 +14,11 @@ module.exports = {
         return config
     },
 
+    i18n: {
+        locales: ['bg', 'en'],
+        defaultLocale: 'bg',
+      },
+
     // images: {
     //     domains: ["res.cloudinary.com"],
     // },

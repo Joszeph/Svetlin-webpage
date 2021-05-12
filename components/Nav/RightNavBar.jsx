@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import Link from 'next/link'
 import { useRouter } from "next/router";
 
+import bg from '../../locales/bg'
+import en from '../../locales/en'
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -45,18 +48,21 @@ const Ul = styled.ul`
 
 const RightNavBar = (props) => {
 
-  const router = useRouter();
+  const router = useRouter()
+
+  const { locale } = router
+  const t = locale === 'bg' ? bg : en
 
   const{open, setOpen} = props
 
   return (
     <Ul open={open}>
-      <li className={router.pathname == "/" ? "active" : ""}><Link href="/" ><a onClick={() => setOpen(!open)}>начало</a></Link></li>
-      <li className={router.pathname == "/about" ? "active" : ""}><Link href="/about"><a onClick={() => setOpen(!open)}>за мен</a></Link></li>
-      <li className={router.pathname == "/activities" ? "active" : ""}><Link href="/activities"><a onClick={() => setOpen(!open)}>сфери на дейност</a></Link></li>
-      <li className={router.pathname == "/clients" ? "active" : ""}><Link href="/clients"><a onClick={() => setOpen(!open)}>клиенти</a></Link></li>
-      <li className={router.pathname == "/articles" ? "active" : ""}><Link href="/articles"><a onClick={() => setOpen(!open)}>публикации</a></Link></li>
-      <li className={router.pathname == "/contacts" ? "active" : ""}><Link href="/contacts"><a onClick={() => setOpen(!open)}>контакти</a></Link></li>
+      <li className={router.pathname == "/" ? "active" : ""}><Link href="/" ><a onClick={() => setOpen(!open)}>{t.menuHome}</a></Link></li>
+      <li className={router.pathname == "/about" ? "active" : ""}><Link href="/about"><a onClick={() => setOpen(!open)}>{t.menuAbout}</a></Link></li>
+      <li className={router.pathname == "/activities" ? "active" : ""}><Link href="/activities"><a onClick={() => setOpen(!open)}>{t.menuPractice}</a></Link></li>
+      <li className={router.pathname == "/clients" ? "active" : ""}><Link href="/clients"><a onClick={() => setOpen(!open)}>{t.menuClients}</a></Link></li>
+      <li className={router.pathname == "/blog" ? "active" : ""}><Link href="/blog"><a onClick={() => setOpen(!open)}>{t.menuLegalBlog}</a></Link></li>
+      <li className={router.pathname == "/contacts" ? "active" : ""}><Link href="/contacts"><a onClick={() => setOpen(!open)}>{t.menuContacts}</a></Link></li>
     </Ul>
   )
 }

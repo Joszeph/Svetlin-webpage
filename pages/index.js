@@ -1,12 +1,20 @@
 import {useEffect} from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+
+import bg from '../locales/bg'
+import en from '../locales/en'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
+
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'bg' ? bg : en
 
   useEffect(() => {
     AOS.init({
@@ -21,33 +29,31 @@ export default function Home() {
       <div className={styles.mainInfo}>
         <div className={styles.info}>
           <h1 className={styles.h1}>
-            Доверие<br />
-            Качество<br />
-            Професионализъм
+            {t.title1}<br />
+            {t.title2}<br />
+            {t.title3}
           </h1>
           <h2 className={styles.h2}>
-            Принципите от които се ръководя в<br />
-            практиката ми като адвокат са:<br />
-            почтеност и защита интересите на клиента
+          {t.title4}<br />
+          {t.title5}<br />
+          {t.title6}
           </h2>
         </div>
         <div className={styles.btn}>
-        <button><Link href="/activities" alt=""><a>дейности</a></Link></button>
-        <button><Link href="/contacts" alt=""><a>контакти</a></Link></button>
+        <button><Link href="/activities" alt=""><a>{t.buttonPractice}</a></Link></button>
+        <button><Link href="/contacts" alt=""><a>{t.buttonContacts}</a></Link></button>
         </div>
       </div>
     </section>
     <section className={styles.quate}>
-      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">"Накрая побеждава справедливата кауза"</h2>
+      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">{t.quate}</h2>
     </section>
     <section className={styles.cards}>
       <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <Image src="/box1.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
-            Осъществяване на процесуално представителство по граждански,
-            наказателни и административни дела. Представителство пред
-            арбитражни съдълища и други особени юрисдикции.
+            {t.card1}
           </p>
         </div>
       </div>
@@ -55,8 +61,7 @@ export default function Home() {
         <Image src="/box2.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
-            Осъществяване на преговори и медиация между страни по правен спор.
-            Предоставяне на устни и писмени правни консултации.
+          {t.card2}
           </p>
         </div>
       </div>
@@ -64,10 +69,7 @@ export default function Home() {
         <Image src="/box3.png" alt="" width={300} height={151}/>
         <div className={styles.container}>
           <p>
-            Изготвяне на договори, правни становища, нотариални покани; искови
-            молби; касационни жалби; жалби срещу административни актове и
-            наказателни постановления; проекти за устав; учредителен акт и/или
-            дружествен договор на юридически лица и търговски дружества и др.
+          {t.card3}
           </p>
         </div>
       </div>
@@ -75,60 +77,56 @@ export default function Home() {
     <section className={styles.activities}>
       <div className={styles.titleBar}>
         <div className={styles.title} data-aos="fade-right">
-          <h2>СФЕРИ НА ДЕЙНОСТ</h2>
+          <h2>{t.areasOfactivityTitle}</h2>
         </div>
         <div className={styles.redEl}></div>
       </div>
       <div className={styles.activitiesList}>
         <div className={styles.leftList}>
-          <h3>Облигационно право</h3>
-          <h3>Семейно право</h3>
-          <h3>Вещно право</h3>
-          <h3>Търговско право</h3>
-          <h3>Медицинско и био право</h3>
+          <h3>{t.activitiesTitle1}</h3>
+          <h3>{t.activitiesTitle2}</h3>
+          <h3>{t.activitiesTitle3}</h3>
+          <h3>{t.activitiesTitle4}</h3>
+          <h3>{t.activitiesTitle5}</h3>
         </div>
         <div className={styles.rightList}>
-          <h3>Лекарска грешка</h3>
-          <h3>Трудово право и трудови злополуки</h3>
-          <h3>Пътно транспортни произшествия</h3>
-          <h3>Застрахователно право</h3>
-          <h3>Трудово право</h3>
+          <h3>{t.activitiesTitle6}</h3>
+          <h3>{t.activitiesTitle7}</h3>
+          <h3>{t.activitiesTitle8}</h3>
+          <h3>{t.activitiesTitle9}</h3>
+          <h3>{t.activitiesTitle10}</h3>
         </div>
       </div>
       <div className={styles.btnAct}>
-      <Link href="/activities" alt=""><a><button>още дейности</button></a></Link>
+      <Link href="/activities" alt=""><a><button>{t.moreBtn}</button></a></Link>
        </div>
     </section>
     <section className={styles.helpInfo}>
       <div className={styles.allContent}>
         <div className={styles.titlesInfoSection} >
-          <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">ПОЛЕЗНА ИНФОРМАЦИЯ</h2>
+          <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">{t.usefulInfo}</h2>
         </div>
         <div className={styles.contentParSection}>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-            <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Имам правен проблем – имам ли нужда от адвокат и как да си избера такъв?</h3>
+            <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>{t.useInfoTitle1}</h3>
             <p>
-              На всеки един от нас, рано или късно, му се налага да ползва правна помощ.
-              Съвременният живот е дотолкова свързан с материалните блага, че на практика
-              е невъзможно човек да не участва поне в няколко правоотношения с имуществен характер
-              и последици през съзнателния си живот.  Неизчерпателно такива правоотношения могат
-              да бъдат: покупката на жилище...
+              {t.useInfoP1}
             </p>
-            <button className={styles.btnInfoPar}>научи поевече</button>
+            <button className={styles.btnInfoPar}>{t.moreInfoBtn}</button>
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
-          <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Предстои ми да закупя жилище. Имам ли нужда от адвокат и как да избера такъв?</h3>
+          <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>{t.useInfoTitle2}</h3>
           <p>
-            В живота на всеки човек, рано или късно, настъпва моментът да закупи собствен дом. Това е важна крачка в житейския ни път, а в повечето случаи покупката на жилище е свързана и със значителни разходи, вземането на ипотечни кредити, ангажирането на посредничеството на брокерски фирми и много други фактически и правни дейсвия. Затова е логично да се запитаме – следва ли да ангажирам...
+          {t.useInfoP2}
             </p>
-            <button className={styles.btnInfoPar}>научи поевече</button>
+            <button className={styles.btnInfoPar}>{t.moreInfoBtn}</button>
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>Що е то „жилищен комплекс от затворен тип“ и има ли почва у нас?</h3>
+          <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>{t.useInfoTitle3}</h3>
             <p>
-            Напоследък стана особено модерно строителните предприемачи да предлагат за продажба жилища в „комплекси от затворен тип“. Увещанията им са, че бъдещият собственик на такова жилище ще живее в една сигурна, спокойна и уютна среда, далеч от градския шум и мръсотия, а общите части на сградата и дворът, в който е построена, ще бъдат винаги чисти и поддържани. Що е то обаче...
+            {t.useInfoP3}
             </p>
-            <button className={styles.btnInfoPar}>научи поевече</button>
+            <button className={styles.btnInfoPar}>{t.moreInfoBtn}</button>
           </div>
         </div>
       </div>
@@ -136,26 +134,26 @@ export default function Home() {
     <section className={styles.clients}>
       <div className={styles.titleBar}>
         <div className={styles.title} data-aos="fade-right">
-          <h2>КЛИЕНТИ</h2>
+          <h2>{t.clientsTitle}</h2>
         </div>
         <div className={styles.redEl}></div>
       </div>
       <div className={styles.clientslogos}>
-        <div>
-          <Image src="/web_03.png" alt="" width={200} height={90}/>
-        </div>
-        <div>
-          <Image src="/web_06.png" alt="" width={200} height={90}/>
-        </div>
-        <div>
-          <Image src="/web_08.png" alt="" width={200} height={90}/>
-        </div>
-        <div>
-          <Image src="/web_10.png" alt="" width={200} height={90}/>
-        </div>
-        <div>
-          <Image src="/web_13.png" alt="" width={200} height={90}/>
-        </div>
+          <div>
+            <Link href="https://esseterre.bg"><a target="_blank"><Image src="/clients-logos/Esseterre-logo.png" alt="Esseterre" width={200} height={100}/></a></Link>
+          </div>
+          <div>
+            <Link href="https://izolacii.bg/"><a target="_blank"><Image src="/clients-logos/izolacii_logo.png" alt="Изолации ЕООД" width={200} height={100}/></a></Link>
+          </div>
+          <div>
+            <Link href="https://migmarket.bg/"><a target="_blank"><Image src="/clients-logos/logo-MIG-MARKET.png" alt="MIG MARKET" width={200} height={100}/></a></Link>
+          </div>
+          <div>
+            <Link href="http://www.milaflor.bg/"><a target="_blank"><Image src="/clients-logos/logo-suprema.png" alt="Suprema" width={200} height={100}/></a></Link>
+          </div>
+          <div>
+            <Link href="http://stf-bg.com/"><a target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link>
+          </div> 
       </div>
     </section>
   </main>

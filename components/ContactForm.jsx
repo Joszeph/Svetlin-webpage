@@ -1,10 +1,8 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
-
+import emailjs from 'emailjs-com'
 import styles from '../styles/ContactForm.module.css'
 
 export default function ContactForm() {
-
   function sendEmail(e) {
     e.preventDefault();
 
@@ -23,7 +21,7 @@ export default function ContactForm() {
       <label for="name">Имена:</label><br />
         <input type="text" name="name" placeholder="" required /><br />
       <label for="email">Email:</label><br />
-        <input type="email" name="email" placeholder="" required/><br />
+        <input type="email" name="email" placeholder="" required /><br />
       <label for="subject">Относно:</label><br />
         <input type="text" name="subject" placeholder="" /><br />
       <label for="message">Съобщение:</label><br />
