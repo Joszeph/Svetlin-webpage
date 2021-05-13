@@ -110,4 +110,5 @@ export default {
   formSubject:'Subject',
   formMsg:'Message',
   formBtn:'Send',
+  logo:'/logoEn.png'
 };

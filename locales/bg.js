@@ -109,5 +109,6 @@ export default {
   formSubject:'Относно',
   formMsg:'Съобщение',
   formBtn:'Изпрати',
+  logo:'/logo.png'
 };
 

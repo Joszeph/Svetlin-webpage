@@ -32,7 +32,7 @@ const Header = () => {
         </div>
       </div>
       <nav className={styles.navBar}>
-        <Link href="/"><a><Image src="/logo.png" alt="" width={228} height={122}/></a></Link>
+        <Link href="/"><a><Image src={t.logo} alt="" width={228} height={122}/></a></Link>
         <Navbar />
       </nav>
     </header>
