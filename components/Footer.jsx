@@ -22,7 +22,7 @@ const Footer = () => {
             <h3>{t.footerTitle1}</h3>
             <p>
               {t.addr1}<br />
-              {t.addr2} <br />
+              {t.addr2}<br />
               {t.addr3}
             </p>
           </address>

@@ -25,9 +25,9 @@ export default function Home() {
   return (
     <main>
     <section className={styles.mainHome}>
-      <Image src="/main_image.png" alt="" width={1920} height={389}/>
+      <Image src="/main_image.png" alt="" width={1920} height={389} data-aos="zoom-in"/>
       <div className={styles.mainInfo}>
-        <div className={styles.info}>
+        <div className={styles.info} data-aos="fade-right">
           <h1 className={styles.h1}>
             {t.title1}<br />
             {t.title2}<br />
@@ -39,7 +39,7 @@ export default function Home() {
           {t.title6}
           </h2>
         </div>
-        <div className={styles.btn}>
+        <div className={styles.btn} data-aos="fade-left">
         <button><Link href="/activities" alt=""><a>{t.buttonPractice}</a></Link></button>
         <button><Link href="/contacts" alt=""><a>{t.buttonContacts}</a></Link></button>
         </div>

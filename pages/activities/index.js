@@ -1,128 +1,128 @@
-import{useEffect} from 'react'
+import{useRouter} from 'next/router'
 import Image from 'next/image'
 import styles from './activities.module.css'
+
+import bg from '../../locales/bg'
+import en from '../../locales/en'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Activities = () => {
 
-    useEffect(() => {
-        AOS.init({
-          // duration : 5000
-        });
-      }, []);
+    const router = useRouter()
+    const { locale } = router
+    const t = locale === 'bg' ? bg : en
 
     return ( 
         <main>
             <section className={styles.activities}>
-                <h1 className={styles.h1}>Сфери на дейност</h1>
-                <Image src="/activities_image.jpeg" alt="" width={1200} height={300}/>
+                <h1 className={styles.h1} data-aos="fade-right">Сфери на дейност</h1>
+                <Image src="/activities_image.jpeg" alt="" width={1200} height={300} data-aos="fade-left"/>
             </section>
             <section className={styles.texts}>
                 <div data-aos="zoom-in-up">
-                <h2>Облигационно право</h2>
+                <h2>{t.actH1a}</h2>
                     <ul>
-                        <li>съставяне на договори</li>
-                        <li>консултация по договори</li>
-                        <li>процесуално представителство</li>
-                        <li>представителство на пострадали и/или извършители на деликт</li>
-                        <li>неоснователно обогатяване</li>
+                        <li>{t.actUlH1a1}</li>
+                        <li>{t.actUlH1a2}</li>
+                        <li>{t.actUlH1a3}</li>
+                        <li>{t.actUlH1a4}</li>
+                        <li>{t.actUlH1a5}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                    <h2>Семейно право</h2>
+                    <h2>{t.actH1b}</h2>
                     <ul>
-                        <li>разводи</li>
-                        <li>издръжка</li>
-                        <li>домашно насилие</li>
-                        <li>брачни договори</li>
-                        <li>неоснователно обогатяване</li>
-                        <li>консултация при осиновяване</li>
+                        <li>{t.actUlb1}</li>
+                        <li>{t.actUlb2}</li>
+                        <li>{t.actUlb3}</li>
+                        <li>{t.actUlb4}</li>
+                        <li>{t.actUlb5}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>Вещно право</h2>
+                <h2>{t.actH1c}</h2>
                     <ul>
-                        <li>сделки с недвижими имоти</li>
-                        <li>процесуално представителство</li>
-                        <li>делби</li>
+                        <li>{t.actUlc1}</li>
+                        <li>{t.actUlc2}</li>
+                        <li>{t.actUlc3}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                    <h2>Търговско право</h2>
+                    <h2>{t.actH1d}</h2>
                     <ul>
-                        <li>регистрация и промяна в обстоятелствата на търговски дружества</li>
-                        <li>изготвяне на договори</li>
-                        <li>процесуално представителство</li>
+                        <li>{t.actUld1}</li>
+                        <li>{t.actUld2}</li>
+                        <li>{t.actUld3}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                    <h2>Медицинско и био право</h2>
+                    <h2>{t.actH1e}</h2>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>Лекарска грешка</h2>
+                <h2>{t.actH1f}</h2>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>Трудово право и трудови злополуки</h2>
+                <h2>{t.actH1g}</h2>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>Пътно транспортни произшествия</h2>
+                <h2>{t.actH1h}</h2>
                 </div>
                 <div data-aos="zoom-in-up">
-                    <h2>Застрахователно право</h2>
+                    <h2>{t.actH1i}</h2>
                     <ul>
-                        <li>консултация по договори и полици</li>
-                        <li>процесуално представителство</li>
-                        <li>искове срещу застрахователни компании от пострадали от ПТП</li>
+                        <li>{t.actUli1}</li>
+                        <li>{t.actUli2}</li>
+                        <li>{t.actUli3}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>Трудово право</h2>
+                <h2>{t.actH1j}</h2>
                 <ul>
-                    <li>искове от работника срещу работодателя при трудова злополука и професионална болест</li>
+                    <li>{t.actUlj1}</li>
                  </ul>
             </div>
             <div data-aos="zoom-in-up">
-                <h2>Административно право</h2>
+                <h2>{t.actH1k}</h2>
                 <ul>
-                        <li> оспорване на административни актове</li>
-                        <li> митнически спорове</li>
+                        <li>{t.actUlk1}</li>
+                        <li>{t.actUlk2}</li>
                     </ul>
             </div>
                 <div data-aos="zoom-in-up">
-                    <h2>Административно-наказателно право</h2>
+                    <h2>{t.actH1l}</h2>
                     <ul>
-                        <li>обжалване на наказателни постановления</li>
+                        <li>{t.actUll1}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>Наказателно право</h2>
+                <h2>{t.actH1m}</h2>
                     <ul>
-                        <li>защита в наказателния процес</li>
-                        <li>представителство на пострадали лица</li>
-                        <li>особени производства</li>
+                        <li>{t.actUlm1}</li>
+                        <li>{t.actUlm2}</li>
+                        <li>{t.actUlm3}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>Право на интелектуалната собственост</h2>
+                <h2>{t.actH1n}</h2>
                 <ul>
-                        <li>регистрация на търговски марки</li>
-                        <li>лицензионни договори</li>
-                        <li>правна консултация</li>
+                        <li>{t.actUln1}</li>
+                        <li>{t.actUln2}</li>
+                        <li>{t.actUln3}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                    <h2>Процесуално представителство</h2>
+                    <h2>{t.actH1r}</h2>
                     <ul>
-                        <li>граждански дела</li>
-                        <li>образуване и водене на изпълнителни дела</li>
-                        <li>обезпечение на искове</li>
-                        <li>образуване и водене на заповедно производство по чл. 410 и чл. 417 ГПК</li>
+                        <li>{t.actUlr1}</li>
+                        <li>{t.actUlr2}</li>
+                        <li>{t.actUlr3}</li>
+                        <li>{t.actUlr4}</li>
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                    <h2>Реституционни права</h2>
+                    <h2>{t.actH1s}</h2>
                 </div>
             </section>
         </main>
