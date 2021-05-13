@@ -101,5 +101,13 @@ export default {
   actUlr3:'обезпечение на искове',
   actUlr4:'образуване и водене на заповедно производство по чл. 410 и чл. 417 ГПК',
   actH1s:'Реституционни права',
+  //Contacts
+  contactsH1:'Контакти',
+  contactsH2:'Свържете се с мен:',
+  //Contact form
+  formName:'Имена',
+  formSubject:'Относно',
+  formMsg:'Съобщение',
+  formBtn:'Изпрати',
 };
 

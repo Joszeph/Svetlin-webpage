@@ -102,5 +102,12 @@ export default {
   actUlr3:'collateral for claims',
   actUlr4:'initiating and conducting order proceedings under Art. 410 and Art. 417 Code of Civil Procedure',
   actH1s:'Restitution rights',
-
+  //Contacts
+  contactsH1:'Contacts',
+  contactsH2:'Contact me:',
+  //Contact form
+  formName:'Names',
+  formSubject:'Subject',
+  formMsg:'Message',
+  formBtn:'Send',
 };
