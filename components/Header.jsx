@@ -22,9 +22,7 @@ const Header = () => {
         <header>
       <div className={styles.topItems}>
         <div className={styles.contacts}>
-          <div>
           <LangSwitch />
-          </div>
          <div> <a href="0888230529">{t.tel}.: 0888/23 05 29</a> | <a href="svetlin1045@abv.bg">e-mail: svetlin1045@abv.bg</a></div>
         </div>
         <div className={styles.socialIcons}>
