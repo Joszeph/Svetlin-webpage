@@ -1,56 +1,77 @@
 import{useRouter} from 'next/router'
+import{useState} from 'react'
 
 import bg from '../locales/bg'
 import en from '../locales/en'
 
 
 const LangSwitch = () => {
+    
 
 const router = useRouter()
 const { locale } = router
 const t = locale === 'bg' ? bg : en
 
 const changeLanguage = (e) => {
-    const locale = e.target.value;
-    router.push(router.pathname, router.asPath, { locale })
+    const locale = e.target.value
+    router.push(router.pathname, router.asPath, { locale });
     }
 
-    return ( 
-        // <div>
-        //     <select
-        //     onChange={changeLanguage}
-        //     defaultValue={locale}>
-        //     <option className="" value="bg">BG</option>
-        //     <option className="" value="en">EN</option>
-        //     </select>
-        // </div>
+    const [language, setLanguage] = useState('bg');
 
-        <div class="wrapper">
-            <button className="langBtn" value="bg" onClick={changeLanguage} defaultValue={locale}>БГ</button>
-            <button className="langBtn" value="en" onClick={changeLanguage} defaultValue={locale}>EN</button> 
+   
+
+    return ( 
+        <div className="wrapper">
+           <form className="form">
+	        <div className="switch-field">
+                <input type="radio" id="radio-one" name="switch-one" value="bg" onClick={changeLanguage} defaultValue={locale} checked={language ==='bg'} />
+                <label for="radio-one">БГ</label>
+                <input type="radio" id="radio-two" name="switch-one" value="en" onClick={changeLanguage} checked={language ==='en'}/>
+                <label for="radio-two">EN</label>
+	        </div>
+        </form>
             <style jsx>{`
-                .langBtn{
-                    width: 35px;
-                    height: 20px;
-                    padding:0px;
-                    font-size:0.5em;
-                    font-weight: bold;
-                    background-color: transparent;
-                    color: #333333;
-                    border: 1px solid #333333;
-                }
-                .langBtn:active{
-                    width: 35px;
-                    height: 20px;
-                    padding:0px;
-                    font-size:0.5em;
-                    font-weight: bold;
-                    background-color: grey;
-                    color: #333333;
-                    border: 1px solid #333333;
-                }
-            `}   
-            </style>
+            .switch-field {
+                display: flex;
+                margin-bottom: 36px;
+                overflow: hidden;
+            }
+            
+            .switch-field input {
+                position: absolute !important;
+                clip: rect(0, 0, 0, 0);
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+            }
+            
+            .switch-field label {
+                font-weight: bold;
+                color: #333333;
+                font-size: 8px;
+                text-align: center;
+                padding: 3px 9px;
+                border: 1px solid #333333;
+            }
+            
+            .switch-field label:hover {
+                cursor: pointer;
+            }
+            
+            .switch-field input:checked + label {
+                background-color: #dedede;
+            
+            }
+            
+            .switch-field label:first-of-type {
+                border-right: none;
+            }
+            
+            .switch-field label:last-of-type {
+                border-left: none;
+            }
+            `}</style>
         </div>
      );
 }
