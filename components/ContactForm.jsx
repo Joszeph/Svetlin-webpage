@@ -3,6 +3,9 @@ import { useRouter } from 'next/router'
 import emailjs from 'emailjs-com'
 import styles from '../styles/ContactForm.module.css'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import bg from '../locales/bg'
 import en from '../locales/en'
 

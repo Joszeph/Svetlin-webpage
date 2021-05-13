@@ -4,6 +4,9 @@ import styles from './contacts.module.css'
 
 import dynamic from 'next/dynamic'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 

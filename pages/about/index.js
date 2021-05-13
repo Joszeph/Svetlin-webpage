@@ -2,8 +2,12 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from './about.module.css'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import bg from '../../locales/bg'
 import en from '../../locales/en'
+
 
 const AboutMe = () => {
 
