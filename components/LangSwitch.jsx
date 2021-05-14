@@ -7,13 +7,13 @@ import en from '../locales/en'
 
 const LangSwitch = () => {
     
-
 const router = useRouter()
 const { locale } = router
 const t = locale === 'bg' ? bg : en
 
 const changeLanguage = (e) => {
     const locale = e.target.value
+    e.preventDefault();
     router.push(router.pathname, router.asPath, { locale });
     }
 
