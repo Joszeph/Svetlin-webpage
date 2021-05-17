@@ -1,13 +1,48 @@
-import styles from '../styles/Card.module.css'
+import Link from 'next/link'
 
-const Card = () => {
+const Card = ({recipe}) => {
+    const{title, slug} = recipe.fields
     return ( 
-        <div className={styles.container}>
-            <span>12.05.2021</span>
-            <h2>Имам правен проблем – имам ли нужда от адвокат и как да си избера такъв?</h2>
-            <div className={styles.border}>
-                <p>На всеки един от нас, рано или късно, му се налага да ползва правна помощ. Съвременният живот е дотолкова свързан с материалните блага, че на практика...</p>
+        <div className="container">
+            <div className="content">
+                <div className="info">
+                    <span>12.05.2021</span>
+                    <Link href={`articles/${slug}`}><a><h2>{title}</h2></a></Link> 
+                </div>
+                        <div className="border">
+                            <p>Кратък текст...</p>
+                        </div>  
             </div>
+            <style jsx>{`
+            .container{
+                margin:25px 0;
+                line-height: 27px;
+            }
+
+            .info a{
+                text-decoration: none;
+                color: black;
+            }
+
+            .border{
+                border: 1px solid #f20f0f;
+                border-right: none;
+                border-top: none;
+                border-left-width: thick;
+                margin: 8px 0;
+            }
+            
+            .border p{
+                margin: 0 0 0px 10px;
+                color: #333333;
+            }
+            
+            .container span{
+                font-size: 0.8em;
+                color:#333333;
+            }
+            
+            `}</style>  
         </div>
      );
 }

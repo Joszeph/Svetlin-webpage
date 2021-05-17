@@ -1,7 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router'
 import emailjs from 'emailjs-com'
-import styles from '../styles/ContactForm.module.css'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -28,8 +27,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className={styles.formContainer} data-aos="fade-left">
-    <form className={styles.contactForm} onSubmit={sendEmail}>
+    <div className="formContainer" data-aos="fade-left">
+    <form className="contactForm" onSubmit={sendEmail}>
       <label for="name">{t.formName}:</label><br />
         <input type="text" name="name" placeholder="" required /><br />
       <label for="email">Email:</label><br />
@@ -40,6 +39,70 @@ export default function ContactForm() {
         <textarea name="message"  required /><br />
         <input type="submit" value={t.formBtn} />
     </form>
+    <style jsx>{`
+      .formContainer{
+        box-sizing: border-box;
+        width: 350px;
+        margin-top: 40px;
+    }
+    
+    .contactForm label{
+        color:#333333;
+    }
+    
+    .contactForm input[type=text] {
+        padding: 15px;
+        margin: 10px 0px 20px 10px;
+        width:350px;
+        border-top: none;
+        border-right: none;
+        background-color: transparent;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #333333;
+        color: #333333;
+        box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    }
+    
+    .contactForm input[type=email] {
+        padding: 15px;
+        margin: 10px 0px 20px 10px;
+        width:350px;
+        border-top: none;
+        border-right: none;
+        background-color: transparent;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #333333;
+        color: #333333;
+        box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    }
+     
+    .contactForm textarea {
+        width:350px;
+        resize: vertical;
+        padding:15px;
+        box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+        height: 60px;
+        margin: 10px 0px 20px 10px;
+        border-top: none;
+        border-right: none;
+        background-color: transparent;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #333333;
+        color: #333333;
+    }
+    
+    .contactForm input[type=submit]{
+        text-transform: uppercase;
+        background-color: #f20f0f;
+        color: white;
+        border: none;
+        padding: 10px 8px;
+        font-size: 0.6em;
+        font-family: "Comfortaa", cursive;
+        margin:5px 0 0 10px;
+        cursor:pointer;
+    }
+    `}</style>
     </div>
   );
 }
