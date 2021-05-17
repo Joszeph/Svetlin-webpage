@@ -7,7 +7,7 @@ const Card = ({recipe}) => {
             <div className="content">
                 <div className="info">
                     <span>12.05.2021</span>
-                    <Link href={`articles/${slug}`}><a><h2>{title}</h2></a></Link> 
+                    <Link href={`articles/bg/${slug}`}><a><h2>{title}</h2></a></Link> 
                 </div>
                         <div className="border">
                             <p>Кратък текст...</p>
