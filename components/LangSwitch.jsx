@@ -25,9 +25,9 @@ const changeLanguage = (e) => {
         <div className="wrapper">
            <form className="form">
 	        <div className="switch-field">
-                <input type="radio" id="radio-one" name="switch-one" value="bg" onClick={changeLanguage} defaultValue={locale} checked={language ==='bg'} />
+                <input type="radio" id="radio-one" name="switch-one" value="bg" onClick={changeLanguage} defaultValue={locale} defaultChecked={language ==='bg'} />
                 <label for="radio-one">БГ</label>
-                <input type="radio" id="radio-two" name="switch-one" value="en" onClick={changeLanguage} checked={language ==='en'}/>
+                <input type="radio" id="radio-two" name="switch-one" value="en" onClick={changeLanguage} defaultChecked={language ==='en'}/>
                 <label for="radio-two">EN</label>
 	        </div>
         </form>
