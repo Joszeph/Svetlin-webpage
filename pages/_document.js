@@ -11,7 +11,6 @@ class MyDocument extends Document {
             <Html lang="bg">
             <Head>
                 <link rel="icon" href="/favicon.ico" />
-                <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
             </Head>
                 <body>
                     <Main/>
