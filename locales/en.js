@@ -53,6 +53,7 @@ export default {
     aboutMeH3:'BIOGRAPHY',
     aboutMeText:'Attorney – at - law Svetlin Todorov was born in the city of Varna in 1984. In 2003 he graduated with honors "First Language School" – Varna, “English and English literature” profile. In December 2008 he graduated with honors the “Law” faculty of Sofia University "St. Kliment Ohridski ". He qualified as a legal practitioner in the autumn of 2009. In the period from autumn of 2009 until the end of 2010, he worked briefly as a solicitor. In November 2011 he passed successfully the Bar Exam, organized by the Supreme Bar Council of Republic of Bulgaria. Since January 2012 he is a member of the Bar Association of the city of Varna and practices, as a lawyer on the territory of Varna district. Attorney – at – law Svetlin Todorov has a strong knowledge of English, both written and spoken.',
   //Activities
+  activH1Title:'Areas of activity',
   actH1a:'Contract law',
   actUlH1a1:'Preparation of contracts',
   actUlH1a2:'Consulting contracts',

@@ -17,7 +17,7 @@ const Activities = () => {
     return ( 
         <main>
             <section className={styles.activities}>
-                <h1 className={styles.h1} data-aos="fade-right">Сфери на дейност</h1>
+                <h1 className={styles.h1} data-aos="fade-right">{t.activH1Title}</h1>
                 <Image src="/activities_image.jpeg" alt="" width={1200} height={300} data-aos="fade-left"/>
             </section>
             <section className={styles.texts}>
