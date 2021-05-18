@@ -12,9 +12,9 @@ import "aos/dist/aos.css";
 
 export default function Home() {
 
-  // const router = useRouter()
-  // const { locale } = router
-  // const t = locale === 'bg' ? bg : en
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'bg' ? bg : en
 
   useEffect(() => {
     AOS.init({

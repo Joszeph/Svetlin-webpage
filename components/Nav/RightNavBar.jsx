@@ -48,10 +48,10 @@ const Ul = styled.ul`
 
 const RightNavBar = (props) => {
 
-  // const router = useRouter()
+  const router = useRouter()
 
-  // const { locale } = router
-  // const t = locale === 'bg' ? bg : en
+  const { locale } = router
+  const t = locale === 'bg' ? bg : en
 
   const{open, setOpen} = props
 

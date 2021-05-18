@@ -16,11 +16,11 @@ module.exports = {
         return config
     },
 
-    // i18n: {
-    //     locales: ['bg', 'en'],
-    //     localeDetection: false,
-    //     defaultLocale: 'bg',
-    //   },
+    i18n: {
+        locales: ['bg', 'en'],
+        localeDetection: false,
+        defaultLocale: 'bg',
+      },
 
 
     // images: {

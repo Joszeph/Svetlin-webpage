@@ -10,9 +10,9 @@ import "aos/dist/aos.css";
 
 const Activities = () => {
 
-    // const router = useRouter()
-    // const { locale } = router
-    // const t = locale === 'bg' ? bg : en
+    const router = useRouter()
+    const { locale } = router
+    const t = locale === 'bg' ? bg : en
 
     return ( 
         <main>
