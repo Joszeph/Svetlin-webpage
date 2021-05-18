@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import{documentToReactComponents} from '@contentful/rich-text-react-renderer'
 
 const Card = ({recipe}) => {
     
