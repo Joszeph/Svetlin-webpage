@@ -2,7 +2,7 @@ import Link from 'next/link'
 import{documentToReactComponents} from '@contentful/rich-text-react-renderer'
 
 const Card = ({recipe}) => {
-    const{title,method} = recipe.fields
+    const{method} = recipe.fields
     const{title, slug} = recipe.fields
     return ( 
         <div className="container">
