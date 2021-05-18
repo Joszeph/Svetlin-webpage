@@ -1,18 +1,19 @@
 import Link from 'next/link'
-import{documentToReactComponents} from '@contentful/rich-text-react-renderer'
+import{useRouter} from 'next/router'
+
 
 const Card = ({recipe}) => {
-    const{method} = recipe.fields
+    const router = useRouter()
+const { locale } = router
     const{title, slug} = recipe.fields
     return ( 
         <div className="container">
             <div className="content">
                 <div className="info">
                     <span>12.05.2021</span>
-                    <Link href={`/articles/${slug}`}><a><h2>{title}</h2></a></Link> 
+                    <Link href={`/${locale}/articles/${slug}`}><a><h2>{title}</h2></a></Link> 
                 </div>
                         <div className="border">
-                        <div>{documentToReactComponents(method)}</div>
                             <p>Кратък текст..</p>
                         </div>  
             </div>
