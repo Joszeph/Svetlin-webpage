@@ -9,18 +9,18 @@ module.exports = {
     //     API_URL: process.env.API_URL
     // },
 
-    // webpack: config => {
-    //     config.resolve.alias['components'] = path.join(__dirname, 'components')
-    //     config.resolve.alias['public'] = path.join(__dirname, 'public')
+    webpack: config => {
+        config.resolve.alias['components'] = path.join(__dirname, 'components')
+        config.resolve.alias['public'] = path.join(__dirname, 'public')
 
-    //     return config
-    // },
+        return config
+    },
 
-    i18n: {
-        locales: ['bg', 'en'],
-        localeDetection: false,
-        defaultLocale: 'bg',
-      },
+    // i18n: {
+    //     locales: ['bg', 'en'],
+    //     localeDetection: false,
+    //     defaultLocale: 'bg',
+    //   },
 
 
     // images: {

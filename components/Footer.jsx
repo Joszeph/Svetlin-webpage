@@ -10,9 +10,9 @@ import { faFacebookSquare,faInstagram,faLinkedin } from "@fortawesome/free-brand
 
 const Footer = () => {
 
-  const router = useRouter()
-  const { locale } = router
-  const t = locale === 'bg' ? bg : en
+  // const router = useRouter()
+  // const { locale } = router
+  // const t = locale === 'bg' ? bg : en
 
     return ( 
     <footer className={styles.footerContainer}>
