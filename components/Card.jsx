@@ -12,7 +12,7 @@ const Card = ({recipe}) => {
                 </div>
                         <div className="border">
                         <div>{documentToReactComponents(method)}</div>
-                            <p>Кратък текст...</p>
+                            <p>Кратък текст..</p>
                         </div>  
             </div>
             <style jsx>{`
