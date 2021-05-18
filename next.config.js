@@ -1,5 +1,11 @@
 const path = require('path')
 // require('dotenv').config()
+const { nextI18NextRewrites } = require('next-i18next/rewrites')
+
+const localeSubpaths = {
+  bg: 'bg',
+  en: 'en',
+};
 
 
 module.exports = {
@@ -20,6 +26,11 @@ module.exports = {
         localeDetection: false,
         defaultLocale: 'bg',
       },
+
+      rewrites: async () => nextI18NextRewrites(localeSubpaths),
+  publicRuntimeConfig: {
+    localeSubpaths,
+  },
 
 
     // images: {

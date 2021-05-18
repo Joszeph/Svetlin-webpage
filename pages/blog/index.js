@@ -5,7 +5,6 @@
 
 import {createClient} from 'contentful'
 
-import "aos/dist/aos.css";
 
 export async function getStaticProps(){
 
