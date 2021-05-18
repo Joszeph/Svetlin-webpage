@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 const Card = ({recipe}) => {
+    
     const{title, slug} = recipe.fields
     return ( 
         <div className="container">
