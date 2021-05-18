@@ -24,14 +24,14 @@ const Contacts = () => {
     return ( 
         <main>
             <div className={styles.title} data-aos="fade-right">
-                <h1>{t.contactsH1}</h1>
+                {/* <h1>{t.contactsH1}</h1> */}
             </div>
             <div className={styles.container}>
             <section className={styles.left}>
                 <Map/>  
             </section>
             <section className={styles.right}>
-              <h2 data-aos="fade-left">{t.contactsH2}</h2>
+              {/* <h2 data-aos="fade-left">{t.contactsH2}</h2> */}
               <ContactForm />
             </section>
           </div>
