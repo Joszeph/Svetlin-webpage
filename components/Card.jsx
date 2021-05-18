@@ -11,6 +11,7 @@ const Card = ({recipe}) => {
                     <Link href={`/articles/${slug}`}><a><h2>{title}</h2></a></Link> 
                 </div>
                         <div className="border">
+                        <div>{documentToReactComponents(method)}</div>
                             <p>Кратък текст...</p>
                         </div>  
             </div>
