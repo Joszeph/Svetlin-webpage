@@ -1,17 +1,16 @@
 import Link from 'next/link'
-import{useRouter} from 'next/router'
+
 
 
 const Card = ({recipe}) => {
-    const router = useRouter()
-const { locale } = router
+
     const{title, slug} = recipe.fields
     return ( 
         <div className="container">
             <div className="content">
                 <div className="info">
                     <span>12.05.2021</span>
-                    <Link href={`/${locale}/articles/${slug}`}><a><h2>{title}</h2></a></Link> 
+                    <Link href={`/articles/${slug}`}><a><h2>{title}</h2></a></Link> 
                 </div>
                         <div className="border">
                             <p>Кратък текст..</p>
