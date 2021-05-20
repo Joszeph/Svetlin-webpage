@@ -1,0 +1,17 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headers h1{
+    color: #f20f0f;
+}
+
+.headers p{
+    padding: 10px 0px 10px 10px;
+    line-height: 22px;
+}
+
+.clientList{
+    
+}
