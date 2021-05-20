@@ -1,8 +1,6 @@
 import styles from './blog.module.css'
-
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-
 
 const Blog = ({posts}) => {
 
@@ -11,16 +9,10 @@ const Blog = ({posts}) => {
 
   useEffect(() => {
     if (posts.length) {
-      // const imgBuilder = imageUrlBuilder({
-      //   projectId: 'mjoyrhci',
-      //   dataset: 'production',
-      // });
-
       setMappedPosts(
         posts.map(p => {
           return {
             ...p,
-            // mainImage: imgBuilder.image(p.mainImage).width(500).height(250),
           }
         })
       );
@@ -34,11 +26,12 @@ const Blog = ({posts}) => {
           <div className={styles.title} data-aos="fade-right">
             <h1>Правен блог</h1>
           </div>
-            <div> 
+            <div className={styles.margin}> 
             {mappedPosts.length ? mappedPosts.map((p, index) => (
-            <div onClick={() => router.push(`/post/${p.slug.current}`)} key={index} className={styles.post}>
+            <div className={styles.post}>
               <h3>{p.title}</h3>
-              {/* <img className={styles.mainImage} src={p.mainImage} /> */}
+              <button className={styles.postBtn} onClick={() => router.push(`/post/${p.slug.current}`)} key={index} className={styles.post}>прочети...</button>
+              <h6>Дата: {new Date(p.publishedAt).toLocaleDateString()}</h6>
             </div>
           )) : <>No Posts Yet</>}
             </div>

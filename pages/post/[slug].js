@@ -2,13 +2,14 @@ import Link from 'next/link'
 import BlockContent from '@sanity/block-content-to-react';
 
 
-const Post = ({title, body})=>{
+const Post = ({title, body, publishedAt})=>{
     return(
         <div className="container">
             <h2>{title}</h2>
             <div>
             <BlockContent blocks={body} />
             </div>
+            <h6>Дата: {new Date(publishedAt).toLocaleDateString()}</h6>
             <div className="link"><Link href="/blog"><a>Обратно</a></Link></div>
             <style jsx>{`
             .container{
@@ -56,6 +57,7 @@ export const getServerSideProps = async pageContext => {
       props: {
         body: post.body,
         title: post.title,
+        publishedAt: post.publishedAt
       }
     }
   }

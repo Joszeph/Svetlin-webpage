@@ -6,3 +6,34 @@
 .title{
     color: #f20f0f;
 }
+
+.post{
+    border: 1px solid #f20f0f;
+    border-right: none;
+    border-top: none;
+    border-left-width: thick;
+    margin: 8px 0;
+}
+
+.post h3{
+    padding: 8px 0px 0px 8px;
+}
+
+.post h6{
+    padding: 2px 0px 0px 8px;
+}
+
+.post button{
+    text-transform:lowercase;
+    background: transparent;
+    color: #f20f0f;
+    border: none;
+    padding: 0px 0px 0px 8px;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-family: "Comfortaa", cursive;
+  }
+
+.margin{
+    margin: 20px 0;
+}
