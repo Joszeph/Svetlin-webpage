@@ -45,6 +45,7 @@ export default {
     addr2:'45 Alexander Dyakovich Str,',
     addr3:'4th floor City Varna.',
     footerTitle2:'Contact telephones:',
+    footerName:'Lawyer Svetlin Todorov',
     //About me
     aboutMeH1:'About me',
     aboutMeH2:'The principles that guide his practice as a lawyer are:',
@@ -111,5 +112,20 @@ export default {
   formSubject:'Subject',
   formMsg:'Message',
   formBtn:'Send',
-  logo:'/logoEn.png'
+  logo:'/logoEn.png',
+  //Clients
+  clientH1:'Clients',
+  clientText1:'Clients of attorney Svetlin Todorov were or are currently reputable companies in the manufacturing, services and construction industries in Varna and the region, including: you have them as trademarks.',
+  clientText2:'To protect the rights and their legitimate interests of Atty. Svetlin Todorov was trusted by schools such as the 4th Language High School - Varna, St. St. Kliment and Metodiy Primary School - Varna and Hristo Botev Primary School - Suvorovo Municipality.',
+  divClients1h1:'ESSETERRE',
+  divClients2h1:'Isolation',
+  divClients3h1:'Mig Market',
+  divClients4h1:'SUPREMA',
+  divClients5h1:'CONSTRUCTION AND TECHNICAL FLEET',
+  divClientsP1:'Esseterre Bulgaria EOOD was established in 2015 and is a 100% investment of the American corporation dōTERRA to initially produce some of their Lavender and Melissa essential oils. Since opening the first distillation block in June 2016 in Dobrich, the company is continuously developing and growing by increasing the production capacity and the number of employees. All of the production at Esseterre is to satisfy the essential oil needs of dōTERRA alone and Esseterre does not trade any products on the internal market.',
+  divClientsP2:'Isolation Ltd. was established at the end of 2005. The company is a member of the Chamber of Builders and is entered in the Register of Builders in Bulgaria for construction "First Group" - third-fifth category and "Fifth Group" - Construction.',
+  divClientsP3:'Mig Market is a construction company that started its activity in 1995. It is developed in the construction of: residential, industrial, hotel, public, agricultural buildings, industrial sites, warehouses and silos, houses, villas, etc., as well as in the implementation of construction repairs and reconstructions. In its more than 25-year history, the company has handed over for use hundreds of homes, shops and offices, industrial buildings, hotels and public procurement sites, realizing its construction activities through assignment, compensation and entrepreneurship.',
+  divClientsP4:'SUPREMA is the official representative of SCM Group S.p.A. and ROBOPAC S.p.A. for Bulgaria. The main activities of the company are: Sale, service and maintenance of machinery and equipment for the furniture and woodworking industry. Sales, service and maintenance of packaging machines with stretch film.',
+  divClientsP5:'"CONSTRUCTION AND TECHNICAL FLEET" AD based on its many years of experience offers optimal option and high quality hydraulic services to our partners in search of cost-effective and environmentally friendly solutions for work in marine and river environments.',
+  blogTitle:'Legal blog',
 };

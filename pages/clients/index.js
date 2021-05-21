@@ -1,35 +1,62 @@
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './clients.module.css'
 
+import "aos/dist/aos.css";
+
+import bg from '../../locales/bg'
+import en from '../../locales/en'
+
 const Clients = () => {
+
+const router = useRouter()
+const { locale } = router
+const t = locale === 'bg' ? bg : en
+
     return ( 
         <main className={styles.container}>
-            <div className={styles.headers}>
-            <h1>Клиенти</h1>
-            <p>Клиенти на адв. Светлин Тодоров са били или понастоящем са реномирани търговски дружества в производствения, сферата на услугите и строителния бранш от Варна и региона, сред които: имаш ги като търговски марки. </p>
-            <p>За защита на правата и законните им интереси на адв. Светлин Тодоров са се доверявали и училища като IV - та Eзикова Гимназия - Варна, ОУ "Св. Св. Климент и Методий" - Варна и ОУ "Христо Ботев" - Община Суворово.</p>
+            <div className={styles.headers} data-aos="fade-right">
+            <h1>{t.clientH1}</h1>
+            <p>{t.clientText1}</p>
+            <p>{t.clientText2}</p>
             </div>
             <section className={styles.clientList}>
-                <div>
-                    <div> <Link href="https://esseterre.bg"><a target="_blank"><Image src="/clients-logos/Esseterre-logo.png" alt="Esseterre" width={200} height={100}/></a></Link></div>
-                    <div>Text</div>
+                <div className={styles.divClients1} data-aos="fade-left">
+                    <div><Link href="https://esseterre.bg"><a target="_blank"><Image src="/clients-logos/Esseterre-logo.png" alt="Esseterre" width={200} height={100}/></a></Link></div>
+                    <div className={styles.clinetText}>
+                        <h2>{t.divClients1h1}</h2>
+                        <p>{t.divClientsP1}</p>
+                    </div>
                 </div>
-                <div>
+                <div className={styles.divClients2} data-aos="fade-left">
                     <div><Link href="https://izolacii.bg/"><a target="_blank"><Image src="/clients-logos/izolacii_logo.png" alt="Изолации ЕООД" width={200} height={100}/></a></Link></div>
-                    <div>Text</div>
+                    <div className={styles.clinetText}>
+                    <h2>{t.divClients2h1}</h2>
+                        <p>{t.divClientsP2}
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <div> <Link href="https://migmarket.bg/"><a target="_blank"><Image src="/clients-logos/logo-MIG-MARKET.png" alt="MIG MARKET" width={200} height={100}/></a></Link></div>
-                    <div>Text</div>
+                <div className={styles.divClients3} data-aos="fade-left">
+                    <div><Link href="https://migmarket.bg/"><a target="_blank"><Image src="/clients-logos/logo-MIG-MARKET.png" alt="MIG MARKET" width={200} height={100}/></a></Link></div>
+                    <div className={styles.clinetText}>
+                    <h2>{t.divClients3h1}</h2>
+                        <p>{t.divClientsP3}</p>
+                    </div>
                 </div>
-                <div>
-                    <div> <Link href="http://www.milaflor.bg/"><a target="_blank"><Image src="/clients-logos/logo-suprema.png" alt="Suprema" width={200} height={100}/></a></Link></div>
-                    <div>Text</div>
+                <div className={styles.divClients4} data-aos="fade-left">
+                    <div><Link href="http://www.milaflor.bg/"><a target="_blank"><Image src="/clients-logos/logo-suprema.png" alt="Suprema" width={200} height={100}/></a></Link></div>
+                    <div className={styles.clinetText}>
+                    <h2> {t.divClients4h1}</h2>
+                        <p>{t.divClientsP4}</p>
+                    </div>
                 </div>
-                <div>
-                    <div> <Link href="http://stf-bg.com/"><a target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link></div>
-                    <div>Text</div>
+                <div className={styles.divClients5} data-aos="fade-left">
+                    <div><Link href="http://stf-bg.com/"><a target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link></div>
+                    <div className={styles.clinetText}>
+                    <h2> {t.divClients5h1}</h2>
+                        <p>{t.divClientsP5}</p>
+                    </div>
                 </div>
             </section>
         </main>

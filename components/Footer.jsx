@@ -37,11 +37,11 @@ const Footer = () => {
         </div>
         <div className={styles.footerRight}>
           <div className={styles.socialIcons}>
-          <Link href="/"><a><i><FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
-          <Link href="/"><a><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
-          <Link href="/"><a><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.facebook.com/svetlin.todorov.1293"><a target="_blank"><i><FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
           </div>
-          <h4>Copyright 2021<br/> <span>&#169;</span> Адвокат Светлин Тодоров</h4>
+          <h4>Copyright 2021<br/> <span>&#169;</span>{t.footerName}</h4>
           <h5>Web Development by Mighty Mint</h5>
         </div>
       </div>

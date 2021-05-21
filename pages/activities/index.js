@@ -5,7 +5,6 @@ import styles from './activities.module.css'
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Activities = () => {
@@ -18,7 +17,7 @@ const Activities = () => {
         <main>
             <section className={styles.activities}>
                 <h1 className={styles.h1} data-aos="fade-right">{t.activH1Title}</h1>
-                <Image src="/activities_image.jpeg" alt="" width={1200} height={300} data-aos="fade-left"/>
+                <Image src="/activities_image.jpeg" alt="" width={1200} height={300} />
             </section>
             <section className={styles.texts}>
                 <div data-aos="zoom-in-up">

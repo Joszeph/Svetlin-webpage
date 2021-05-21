@@ -26,9 +26,9 @@ const Header = () => {
          <div> <a href="0888230529">{t.tel}.: 0888/23 05 29</a> | <a href="svetlin1045@abv.bg">e-mail: svetlin1045@abv.bg</a></div>
         </div>
         <div className={styles.socialIcons}>
-          <Link href="/"><a><i><FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
-          <Link href="/"><a><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
-          <Link href="/"><a><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.facebook.com/svetlin.todorov.1293"><a target="_blank"><i><FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
         </div>
       </div>
       <nav className={styles.navBar}>

@@ -2,6 +2,10 @@ import styles from './blog.module.css'
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+import bg from '../../locales/bg'
+import en from '../../locales/en'
+
+
 const Blog = ({posts}) => {
 
   const router = useRouter();
@@ -21,10 +25,13 @@ const Blog = ({posts}) => {
     }
   }, [posts]);
 
+  const { locale } = router
+  const t = locale === 'bg' ? bg : en
+
     return ( 
         <main className={styles.container}>
           <div className={styles.title} data-aos="fade-right">
-            <h1>Правен блог</h1>
+            <h1>{t.blogTitle}</h1>
           </div>
             <div className={styles.margin}> 
             {mappedPosts.length ? mappedPosts.map((p, index) => (

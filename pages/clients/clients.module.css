@@ -8,10 +8,56 @@
 }
 
 .headers p{
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 0px;
     line-height: 22px;
 }
 
 .clientList{
-    
+    margin-bottom: 40px;
+}
+
+.divClients1,
+.divClients2,
+.divClients3,
+.divClients4,
+.divClients5{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:20px 0;
+}
+
+.clinetText{
+    flex-basis: 50%;
+    line-height: 22px;
+}
+
+.clinetText h2{
+    margin: 10px 0;
+}
+
+.clinetText p{
+    color:#333333
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .clinetText{
+        flex-basis: 100%;
+        line-height: 22px;
+        margin: 0 20px;
+    }
+    .headers{
+        margin: 0 10px; 
+    }
+    .headers h1{
+        margin: 0 10px; 
+    }
+}
+  
+  /* Tablets */
+  @media only screen and (max-width: 1007px) {
+   
 }

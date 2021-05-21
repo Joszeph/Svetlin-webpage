@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
     <section className={styles.mainHome}>
-      <Image src="/main_image.png" alt="" width={1920} height={389} data-aos="zoom-in"/>
+      <Image src="/main_image.png" alt="" width={1920} height={389}/>
       <div className={styles.mainInfo}>
         <div className={styles.info} data-aos="fade-right">
           <h1 className={styles.h1}>
