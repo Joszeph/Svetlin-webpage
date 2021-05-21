@@ -7,8 +7,19 @@ import "aos/dist/aos.css";
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 
+import{NextSeo} from 'next-seo'
 
 const AboutMe = () => {
+
+    const SEO = {
+        title: "Адвокат Светлин Тодоров | За Мен",
+        description: "Адвокат Светлин Тодоров | Адвокатска Кантора Варна | За Мен",
+    
+        openGraph:{
+            title: "Адвокат Светлин Тодоров | За Мен",
+            description: "Адвокат Светлин Тодоров | Адвокатска Кантора Варна | За Мен",
+        }
+    }
 
 const router = useRouter()
 const { locale } = router
@@ -16,6 +27,7 @@ const t = locale === 'bg' ? bg : en
 
     return ( 
         <main>
+            <NextSeo {...SEO} />
             <div className={styles.container}>
                 <section className={styles.titles} data-aos="fade-right">
                     <h1 className={styles.h1}>{t.aboutMeH1}</h1>
@@ -32,7 +44,7 @@ const t = locale === 'bg' ? bg : en
                         <div className={styles.aboutText} data-aos="zoom-in">
                         <p>{t.aboutMeText}</p>
                         </div>
-                    <Image src="/about_picture.png" alt="" width={700} height={491} data-aos="fade-left"/>
+                    <Image src="/about_picture.png" alt="" width={700} height={491} data-aos="fade-up"/>
                     </div>
                 </section>
             </div>

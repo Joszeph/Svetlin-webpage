@@ -2,7 +2,6 @@ import React from 'react';
 import { useRouter } from 'next/router'
 import emailjs from 'emailjs-com'
 
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 import bg from '../locales/bg'
@@ -27,7 +26,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="formContainer" data-aos="fade-left">
+    <div className="formContainer" data-aos="flip-left">
     <form className="contactForm" onSubmit={sendEmail}>
       <label for="name">{t.formName}:</label><br />
         <input type="text" name="name" placeholder="" required /><br />

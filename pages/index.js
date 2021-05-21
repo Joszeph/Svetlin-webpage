@@ -39,7 +39,7 @@ export default function Home() {
           {t.title6}
           </h2>
         </div>
-        <div className={styles.btn} data-aos="fade-left">
+        <div className={styles.btn} data-aos="fade-up">
         <button><Link href="/activities" alt=""><a>{t.buttonPractice}</a></Link></button>
         <button><Link href="/contacts" alt=""><a>{t.buttonContacts}</a></Link></button>
         </div>

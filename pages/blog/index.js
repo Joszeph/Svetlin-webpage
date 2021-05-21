@@ -5,8 +5,19 @@ import { useRouter } from 'next/router';
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 
+import{NextSeo} from 'next-seo'
 
 const Blog = ({posts}) => {
+
+  const SEO = {
+    title: "Адвокат Светлин Тодоров | Правен Блог",
+    description: "Адвокат Светлин Тодоров | Адвокатска Кантора Варна | Правен Блог",
+
+    openGraph:{
+        title: "Адвокат Светлин Тодоров | Правен Блог",
+        description: "Адвокат Светлин Тодоров | Адвокатска Кантора Варна | Правен Блог",
+    }
+}
 
   const router = useRouter();
   const [mappedPosts, setMappedPosts] = useState([]);
@@ -30,6 +41,7 @@ const Blog = ({posts}) => {
 
     return ( 
         <main className={styles.container}>
+          <NextSeo {...SEO} />
           <div className={styles.title} data-aos="fade-right">
             <h1>{t.blogTitle}</h1>
           </div>

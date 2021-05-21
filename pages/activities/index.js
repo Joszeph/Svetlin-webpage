@@ -5,9 +5,21 @@ import styles from './activities.module.css'
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 
-import "aos/dist/aos.css";
+import "aos/dist/aos.css"
+
+import{NextSeo} from 'next-seo'
 
 const Activities = () => {
+
+    const SEO = {
+        title: "Адвокат Светлин Тодоров | Сфери На Дейност",
+        description: "Адвокат Светлин Тодоров | Адвокатска Кантора Варна | Сфери На Дейност",
+    
+        openGraph:{
+            title: "Адвокат Светлин Тодоров | Сфери На Дейност",
+            description: "Адвокат Светлин Тодоров | Адвокатска Кантора Варна | Сфери На Дейност",
+        }
+    }
 
     const router = useRouter()
     const { locale } = router
@@ -15,6 +27,7 @@ const Activities = () => {
 
     return ( 
         <main>
+            <NextSeo {...SEO} />
             <section className={styles.activities}>
                 <h1 className={styles.h1} data-aos="fade-right">{t.activH1Title}</h1>
                 <Image src="/activities_image.jpeg" alt="" width={1200} height={300} />
