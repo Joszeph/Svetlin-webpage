@@ -164,6 +164,15 @@
   margin-top: 20px;
 }
 
+.contentParSection a {
+  text-decoration: none;
+  color:white;
+}
+
+.contentParSection a:hover {
+  color:#f20f0f;
+  font-weight: bold;
+}
 
 .btnInfoPar {
   text-transform: uppercase;
