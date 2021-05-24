@@ -37,3 +37,16 @@
 .margin{
     margin: 20px 0;
 }
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+   .container{
+    margin:0 20px ;
+   }
+    
+}
+  
+  /* Tablets */
+  @media only screen and (max-width: 1007px) {
+   
+}
