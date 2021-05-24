@@ -112,21 +112,27 @@ export default function Home() {
             <p>
               {t.useInfoP1}
             </p>
-            <button className={styles.btnInfoPar}>{t.moreInfoBtn}</button>
+            <button className={styles.btnInfoPar}>
+              <Link href="/post/imam-praven-problem-imam-li-nuzhda-ot-advokat-i-kak-da-si-izbera-takv"><a>{t.moreInfoBtn}</a></Link>
+              </button>
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
           <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>{t.useInfoTitle2}</h3>
           <p>
           {t.useInfoP2}
             </p>
-            <button className={styles.btnInfoPar}>{t.moreInfoBtn}</button>
+            <button className={styles.btnInfoPar}>
+            <Link href="/post/predstoi-mi-da-zakupya-zhilishe-imam-li-nuzhda-ot-advokat-i-kak-da-izbera-takv"><a>{t.moreInfoBtn}</a></Link>
+            </button>
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>{t.useInfoTitle3}</h3>
             <p>
             {t.useInfoP3}
             </p>
-            <button className={styles.btnInfoPar}>{t.moreInfoBtn}</button>
+            <button className={styles.btnInfoPar}>
+            <Link href="/post/sho-e-to-zhilishen-kompleks-ot-zatvoren-tip-i-ima-li-pochva-u-nas"><a>{t.moreInfoBtn}</a></Link>
+            </button>
           </div>
         </div>
       </div>
