@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <div className={styles.footerRight}>
           <div className={styles.socialIcons}>
-          <Link href="https://www.facebook.com/svetlin.todorov.1293"><a target="_blank"><i><FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
           <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
           <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
           </div>

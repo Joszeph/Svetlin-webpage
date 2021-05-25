@@ -30,7 +30,6 @@ export default function Home() {
         <div className={styles.info} data-aos="fade-right">
           <h1 className={styles.h1}>
             {t.title1}<br />
-            {t.title2}<br />
             {t.title3}
           </h1>
           <h2 className={styles.h2}>
@@ -109,20 +108,31 @@ export default function Home() {
         <div className={styles.contentParSection}>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
             <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>{t.useInfoTitle1}</h3>
+            <br />
+            <br />
             <p>
               {t.useInfoP1}
             </p>
             <button className={styles.btnInfoPar}>
-              <Link href="/post/imam-praven-problem-imam-li-nuzhda-ot-advokat-i-kak-da-si-izbera-takv"><a>{t.moreInfoBtn}</a></Link>
+              {locale == 'bg' ?
+                <Link href="/post/imam-praven-problem-imam-li-nuzhda-ot-advokat-i-kak-da-si-izbera-takv"><a>{t.articleLink1}</a></Link>
+                :
+                <Link href="/en/post/i-have-been-sentenced-and-imprisoned-in-bulgaria-how-can-i-apply-for-a-prison-transfer-to-the-uk"><a>{t.articleLink1}</a></Link>  
+            }
               </button>
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
           <h3 style={{ textAlign: 'center', margin:'0px 0 20px 0' }}>{t.useInfoTitle2}</h3>
+          <br />
           <p>
           {t.useInfoP2}
             </p>
             <button className={styles.btnInfoPar}>
-            <Link href="/post/predstoi-mi-da-zakupya-zhilishe-imam-li-nuzhda-ot-advokat-i-kak-da-izbera-takv"><a>{t.moreInfoBtn}</a></Link>
+            {locale == 'bg' ?
+            <Link href="/post/predstoi-mi-da-zakupya-zhilishe-imam-li-nuzhda-ot-advokat-i-kak-da-izbera-takv"><a>{t.articleLink2}</a></Link>
+            :
+            <Link href="/en/post/how-long-someone-can-be-kept-in-detention-without-charges-being-pressed-against-him-her-i-have"><a>{t.articleLink2}</a></Link>
+            }
             </button>
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -131,7 +141,11 @@ export default function Home() {
             {t.useInfoP3}
             </p>
             <button className={styles.btnInfoPar}>
-            <Link href="/post/sho-e-to-zhilishen-kompleks-ot-zatvoren-tip-i-ima-li-pochva-u-nas"><a>{t.moreInfoBtn}</a></Link>
+            {locale == 'bg' ?
+            <Link href="/post/sho-e-to-zhilishen-kompleks-ot-zatvoren-tip-i-ima-li-pochva-u-nas"><a>{t.articleLink3}</a></Link>
+            :
+            <Link href="/en/post/terms-and-conditions-under-which-a-foreigner-who-is-not-a-citizen-of-a-country-member-of-eu-may"><a>{t.articleLink3}</a></Link>
+          }
             </button>
           </div>
         </div>

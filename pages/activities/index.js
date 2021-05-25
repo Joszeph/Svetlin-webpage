@@ -109,14 +109,6 @@ const Activities = () => {
                     </ul>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>{t.actH1m}</h2>
-                    <ul>
-                        <li>{t.actUlm1}</li>
-                        <li>{t.actUlm2}</li>
-                        <li>{t.actUlm3}</li>
-                    </ul>
-                </div>
-                <div data-aos="zoom-in-up">
                 <h2>{t.actH1n}</h2>
                 <ul>
                         <li>{t.actUln1}</li>

@@ -33,6 +33,7 @@ const t = locale === 'bg' ? bg : en
             <h1>{t.clientH1}</h1>
             <p>{t.clientText1}</p>
             <p>{t.clientText2}</p>
+            <p>{t.clientText3}</p>
             </div>
             <section className={styles.clientList}>
                 <div className={styles.divClients1} data-aos="fade-up">

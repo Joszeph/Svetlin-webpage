@@ -32,10 +32,11 @@ const t = locale === 'bg' ? bg : en
                 <section className={styles.titles} data-aos="fade-right">
                     <h1 className={styles.h1}>{t.aboutMeH1}</h1>
                     <h2>{t.aboutMeH2}</h2>
-                    <ul>
+                    <p>{t.aboutMeP}</p>
+                    {/* <ul>
                         <li>{t.aboutMeLi1}</li>
                         <li>{t.aboutMeLi2}</li>
-                    </ul>
+                    </ul> */}
                 </section>
                 
                 <section className={styles.aboutMe}>
