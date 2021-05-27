@@ -34,8 +34,8 @@
     font-family: "Comfortaa", cursive;
   }
 
-.margin{
-    margin: 20px 0;
+.margin div{
+    margin-bottom: 20px;
 }
 
 /* Mobile */
