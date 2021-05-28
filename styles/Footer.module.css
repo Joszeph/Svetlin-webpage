@@ -40,11 +40,11 @@
     margin-bottom: 5px;
   }
 
-  .socialIcons a{
+  /* .socialIcons a{
     text-decoration: none;
     color:white;
-    margin-left: 5px;
-  }
+    margin-left: 0px;
+  } */
 
   /* Mobile */
 @media only screen and (max-width: 600px) {

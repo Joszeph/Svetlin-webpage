@@ -26,9 +26,21 @@ const Header = () => {
          <div> <a href="tel:0888230529">{t.tel}.: 0888/23 05 29</a> | <a href="mailto:svetlin1045@abv.bg">e-mail: svetlin1045@abv.bg</a></div>
         </div>
         <div className="socialIcons">
-          <Image src='/linkedin.svg' width={20} height={20}></Image>
-          <Image src='/facebook.svg' width={20} height={20}></Image>
-          <Image src='/instagram.svg' width={20} height={20}></Image>
+          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486">
+          <a target="_blank">
+          <Image src='/linkedin.svg' width={20} height={20}/>
+          </a>
+          </Link>
+          <Link href="https://www.facebook.com/todorovlawyer/">
+          <a target="_blank">
+          <Image src='/facebook.svg' width={20} height={20}/>
+          </a>
+          </Link>
+          <Link href="https://www.instagram.com/svetlin1045/">
+          <a target="_blank">
+          <Image src='/instagram.svg' width={20} height={20}/>
+          </a>
+          </Link>
           {/* <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
           <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
           <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon></i></a></Link> */}

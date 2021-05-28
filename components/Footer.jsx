@@ -38,9 +38,21 @@ const Footer = () => {
         </div>
         <div className={styles.footerRight}>
           <div className={styles.socialIcons}>
-          <Image src='/linkedin.svg' width={20} height={20}></Image>
-          <Image src='/facebook.svg' width={20} height={20}></Image>
-          <Image src='/instagram.svg' width={20} height={20}></Image>
+          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486">
+          <a target="_blank">
+          <Image src='/linkedinFooter.svg' width={30} height={30}/>
+          </a>
+          </Link>
+          <Link href="https://www.facebook.com/todorovlawyer/">
+          <a target="_blank">
+          <Image src='/facebookFooter.svg' width={30} height={30}/>
+          </a>
+          </Link>
+          <Link href="https://www.instagram.com/svetlin1045/">
+          <a target="_blank">
+          <Image src='/instagramFooter.svg' width={30} height={30}/>
+          </a>
+          </Link>
           {/* <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
           <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
           <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon></i></a></Link> */}
