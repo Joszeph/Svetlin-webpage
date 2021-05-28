@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import styles from '../styles/Footer.module.css'
 
@@ -37,9 +38,12 @@ const Footer = () => {
         </div>
         <div className={styles.footerRight}>
           <div className={styles.socialIcons}>
-          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
+          <Image src='/linkedin.svg' width={20} height={20}></Image>
+          <Image src='/facebook.svg' width={20} height={20}></Image>
+          <Image src='/instagram.svg' width={20} height={20}></Image>
+          {/* <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
           <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
-          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon></i></a></Link> */}
           </div>
           <h4>Copyright 2021<br/> <span>&#169;</span>{t.footerName}</h4>
           <h5>Web Development by Mighty Mint</h5>
