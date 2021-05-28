@@ -37,7 +37,7 @@ const Header = () => {
       </nav>
       <style jsx>{`
         .socialIcons{
-          font-size: 2em;
+          // font-size: 2em;
           margin-top:10px;
           text-align: end;
         }
