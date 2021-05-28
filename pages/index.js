@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
     <section className={styles.mainHome}>
-      <Image src="/main_image.png" alt="" width={1920} height={389}/>
+      <Image src="/main_image.png" alt="main-Image-Todorov" width={1920} height={389}/>
       <div className={styles.mainInfo}>
         <div className={styles.info} data-aos="fade-right">
           <h1 className={styles.h1}>
@@ -49,7 +49,7 @@ export default function Home() {
     </section>
     <section className={styles.cards}>
       <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <Image src="/box1.png" alt="" width={300} height={151}/>
+        <Image src="/box1.png" alt="box-Image-Todorov" width={300} height={151}/>
         <div className={styles.container}>
           <p>
             {t.card1}
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
-        <Image src="/box2.png" alt="" width={300} height={151}/>
+        <Image src="/box2.png" alt="box-Image-Todorov2" width={300} height={151}/>
         <div className={styles.container}>
           <p>
           {t.card2}
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-        <Image src="/box3.png" alt="" width={300} height={151}/>
+        <Image src="/box3.png" alt="box-Image-Todorov3" width={300} height={151}/>
         <div className={styles.container}>
           <p>
           {t.card3}

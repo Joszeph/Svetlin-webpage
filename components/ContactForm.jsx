@@ -29,13 +29,13 @@ export default function ContactForm() {
   return (
     <div className={styles.formContainer} >
     <form className={styles.contactForm} onSubmit={sendEmail}>
-      <label for="name">{t.formName}:</label><br />
+      <label htmlFor="name">{t.formName}:</label><br />
         <input type="text" name="name" placeholder="" required /><br />
-      <label for="email">Email:</label><br />
+      <label htmlFor="email">Email:</label><br />
         <input type="email" name="email" placeholder="" required /><br />
-      <label for="subject">{t.formSubject}:</label><br />
+      <label htmlFor="subject">{t.formSubject}:</label><br />
         <input type="text" name="subject" placeholder="" /><br />
-      <label for="message">{t.formMsg}:</label><br />
+      <label htmlFor="message">{t.formMsg}:</label><br />
         <textarea name="message"  required /><br />
         <input type="submit" value={t.formBtn} />
     </form>

@@ -9,14 +9,17 @@ const ErrorPage = () => {
             <style jsx>{`
                 .container{
                     max-width:1200px;
-                    margin:0 auto;
+                    margin: 0 auto 300px;
                     color:#f20f0f;
-                    padding:250px;
                     line-height:40px;
                 }
                 .container a{
                     text-decoration:none;
                     color:#f20f0f;
+                    margin: 0 20px;
+                }
+                .container h1{
+                    margin: 0 20px;
                 }
             `}</style>
         </div>

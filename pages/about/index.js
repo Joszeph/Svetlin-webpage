@@ -45,7 +45,7 @@ const t = locale === 'bg' ? bg : en
                         <div className={styles.aboutText} data-aos="zoom-in">
                         <p>{t.aboutMeText}</p>
                         </div>
-                    <Image src="/about_picture.png" alt="" width={700} height={491} data-aos="fade-up"/>
+                    <Image src="/about_picture.png" alt="Svetlin-Todorov" width={700} height={491} data-aos="fade-up"/>
                     </div>
                 </section>
             </div>
