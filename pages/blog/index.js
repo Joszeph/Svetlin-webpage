@@ -1,11 +1,12 @@
 import styles from './blog.module.css'
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 import bg from '../../locales/bg'
 import en from '../../locales/en'
 
 import{NextSeo} from 'next-seo'
+
 
 const Blog = ({posts}) => {
 
@@ -59,7 +60,7 @@ const Blog = ({posts}) => {
 }
 
 export const getServerSideProps = async pageContext => {
-  const query = encodeURIComponent('*[ _type == "post" ]|order(publishedAt desc)');
+  const query = encodeURIComponent('*[ _type == "post" ]|order(publishedAt desc)[]');
   const url = `https://83rj43sn.api.sanity.io/v1/data/query/production?query=${query}`;
   const result = await fetch(url).then(res => res.json());
 

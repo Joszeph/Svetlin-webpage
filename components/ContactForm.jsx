@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
 import emailjs from 'emailjs-com'
+import styles from '../styles/ContactForm.module.css'
 
 import "aos/dist/aos.css";
 
@@ -26,8 +27,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="formContainer" data-aos="flip-left">
-    <form className="contactForm" onSubmit={sendEmail}>
+    <div className={styles.formContainer} data-aos="flip-left">
+    <form className={styles.contactForm} onSubmit={sendEmail}>
       <label for="name">{t.formName}:</label><br />
         <input type="text" name="name" placeholder="" required /><br />
       <label for="email">Email:</label><br />
@@ -38,7 +39,7 @@ export default function ContactForm() {
         <textarea name="message"  required /><br />
         <input type="submit" value={t.formBtn} />
     </form>
-    <style jsx>{`
+    {/* <style jsx>{`
       .formContainer{
         box-sizing: border-box;
         width: 350px;
@@ -101,7 +102,7 @@ export default function ContactForm() {
         margin:5px 0 0 10px;
         cursor:pointer;
     }
-    `}</style>
+    `}</style> */}
     </div>
   );
 }
