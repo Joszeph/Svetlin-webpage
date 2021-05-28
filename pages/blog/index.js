@@ -48,12 +48,12 @@ const Blog = ({posts}) => {
           </div>
             <div className={styles.margin}> 
             {mappedPosts.length ? mappedPosts.map((p, index) => (
-            <div className={styles.post}>
+            <div className={styles.post} data-aos="zoom-in-up">
               <h3>{p.title}</h3>
               <button className={styles.postBtn} onClick={() => router.push(`/post/${p.slug.current}`)} key={index} className={styles.post}>прочети...</button>
               <h6>Дата: {new Date(p.publishedAt).toLocaleDateString()}</h6>
             </div>
-          )) : <>No Posts Yet</>}
+          )) : <>Зареждане...</>}
             </div>
         </main>
      );

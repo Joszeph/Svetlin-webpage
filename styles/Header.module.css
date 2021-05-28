@@ -17,18 +17,7 @@
     color:#333333;
   }
 
-  .socialIcons{
-    font-size: 2em;
-    margin-top:10px;
-    text-align: end;
-  }
 
-  .socialIcons a{
-    text-decoration: none;
-    color:#333333;
-    margin-left: 5px;
-  }
-  
   .navBar {
     max-width: 1200px;
     margin: 0 auto;
