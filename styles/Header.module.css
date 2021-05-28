@@ -27,7 +27,7 @@
     align-items: center;
   }
   
-  @media only screen and (max-width: 1004px) {
+  @media only screen and (max-width: 1239px) {
   .contacts{
     text-align: left;
     flex-wrap: wrap-reverse;

@@ -25,8 +25,7 @@ const Ul = styled.ul`
   .active a{
     color:#f20f0f;
   }
-
-  @media (max-width: 1132px) {
+  @media only screen and (max-width: 1239px) {
     flex-flow: column;
     background-color: #8d8d8deb;
     position: fixed;

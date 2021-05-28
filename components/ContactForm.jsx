@@ -27,7 +27,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className={styles.formContainer} data-aos="flip-left">
+    <div className={styles.formContainer} >
     <form className={styles.contactForm} onSubmit={sendEmail}>
       <label for="name">{t.formName}:</label><br />
         <input type="text" name="name" placeholder="" required /><br />

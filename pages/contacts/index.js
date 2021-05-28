@@ -43,7 +43,7 @@ const Contacts = () => {
                 <Map/>  
             </section>
             <section className={styles.right}>
-              <h2 data-aos="fade-up">{t.contactsH2}</h2>
+              <h2>{t.contactsH2}</h2>
               <ContactForm />
             </section>
           </div>
