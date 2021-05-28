@@ -6,7 +6,7 @@ import bg from '../locales/bg'
 import en from '../locales/en'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
 
@@ -37,9 +37,9 @@ const Footer = () => {
         </div>
         <div className={styles.footerRight}>
           <div className={styles.socialIcons}>
-          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
-          <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></i></a></Link>
-          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon></i></a></Link>
           </div>
           <h4>Copyright 2021<br/> <span>&#169;</span>{t.footerName}</h4>
           <h5>Web Development by Mighty Mint</h5>

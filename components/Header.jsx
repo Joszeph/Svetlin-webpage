@@ -6,7 +6,7 @@ import Navbar from './Nav/NavBar'
 import LangSwitch from '../components/LangSwitch'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 import bg from '../locales/bg'
@@ -26,9 +26,9 @@ const Header = () => {
          <div> <a href="tel:0888230529">{t.tel}.: 0888/23 05 29</a> | <a href="mailto:svetlin1045@abv.bg">e-mail: svetlin1045@abv.bg</a></div>
         </div>
         <div className="socialIcons">
-          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
-          <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></i></a></Link>
-          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.facebook.com/todorovlawyer/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faFacebookSquare}></FontAwesomeIcon></i></a></Link>
+          <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon></i></a></Link>
         </div>
       </div>
       <nav className={styles.navBar}>
