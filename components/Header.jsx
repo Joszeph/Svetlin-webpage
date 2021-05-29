@@ -28,17 +28,17 @@ const Header = () => {
         <div className="socialIcons">
           <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486">
           <a target="_blank">
-          <Image src='/linkedin.svg' width={20} height={20}/>
+          <Image src='/linkedin.svg' width={30} height={30}/>
           </a>
           </Link>
           <Link href="https://www.facebook.com/todorovlawyer/">
           <a target="_blank">
-          <Image src='/facebook.svg' width={20} height={20}/>
+          <Image src='/facebook.svg' width={30} height={30}/>
           </a>
           </Link>
           <Link href="https://www.instagram.com/svetlin1045/">
           <a target="_blank">
-          <Image src='/instagram.svg' width={20} height={20}/>
+          <Image src='/instagram.svg' width={30} height={30}/>
           </a>
           </Link>
           {/* <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
@@ -52,17 +52,13 @@ const Header = () => {
       </nav>
       <style jsx>{`
         .socialIcons{
-          // font-size: 2em;
           margin-top:10px;
           text-align: end;
         }
-      
         .socialIcons a{
-          text-decoration: none;
-          color:#333333;
-          margin-left: 5px;
+          margin:-2px;
         }
-        
+      
       `}</style>
     </header>
      );

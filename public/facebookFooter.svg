@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="234px" height="129px" viewBox="0 0 234 129" enable-background="new 0 0 234 129" xml:space="preserve">
-<title>Facebook icon</title>
-<path fill="#FFFFFF" d="M181.5,64.893c0-35.62-28.88-64.5-64.5-64.5s-64.5,28.88-64.5,64.5c0,32.196,23.585,58.877,54.422,63.715
-	V83.538H90.544V64.887h16.377V50.686c0-16.163,9.632-25.096,24.365-25.096c7.052,0,14.438,1.263,14.438,1.263v15.873h-8.139
-	c-8.014,0-10.514,4.972-10.514,10.073v12.094h17.889l-2.859,18.65h-15.029v45.07C157.914,123.77,181.5,97.083,181.5,64.893z"/>
+<svg version="1.1" id="Layer_1" xmlns:serif="http://www.serif.com/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="234px" height="129px"
+	 viewBox="0 0 234 129" enable-background="new 0 0 234 129" xml:space="preserve">
+<path fill="#F6F6F6" d="M165.738,0c8.699,0,15.762,7.063,15.762,15.761v97.479c0,8.697-7.063,15.761-15.762,15.761h-26.824V80.395
+	h16.779l3.193-20.816h-19.974V46.069c0-5.695,2.79-11.246,11.735-11.246h9.082V17.1c0,0-8.242-1.406-16.121-1.406
+	c-16.449,0-27.2,9.97-27.2,28.018v15.866H98.125v20.816h18.285V129H68.261c-8.699,0-15.761-7.063-15.761-15.761V15.761
+	C52.5,7.063,59.562,0,68.261,0H165.738z"/>
 </svg>

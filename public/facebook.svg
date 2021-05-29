@@ -1,1 +1,11 @@
-<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Facebook icon</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:serif="http://www.serif.com/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="234px" height="129px"
+	 viewBox="0 0 234 129" enable-background="new 0 0 234 129" xml:space="preserve">
+<path fill="#333333" d="M165.739,0c8.698,0,15.761,7.063,15.761,15.761v97.479c0,8.698-7.063,15.761-15.761,15.761h-26.825V80.395
+	h16.78l3.192-20.817h-19.973V46.069c0-5.695,2.79-11.246,11.736-11.246h9.081V17.1c0,0-8.241-1.406-16.12-1.406
+	c-16.45,0-27.201,9.97-27.201,28.018v15.866H98.125v20.817h18.285V129H68.261c-8.699,0-15.761-7.063-15.761-15.761V15.761
+	C52.5,7.063,59.562,0,68.261,0H165.739z"/>
+</svg>
