@@ -38,6 +38,10 @@
     margin-bottom: 20px;
 }
 
+.loading{
+    padding:20px 0;
+}
+
 /* Mobile */
 @media only screen and (max-width: 600px) {
    .container{

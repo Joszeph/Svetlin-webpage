@@ -128,6 +128,7 @@ export default {
   articleLink1:'Научи повече',
   articleLink2:'Научи повече',
   articleLink3:'Научи повече',
+  loading:'Зареждане...'
 };
 
 

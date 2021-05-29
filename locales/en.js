@@ -129,4 +129,5 @@ export default {
   articleLink1:'More',
   articleLink2:'More',
   articleLink3:'More',
+  loading:'Loading...'
 };
