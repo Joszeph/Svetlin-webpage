@@ -15,8 +15,7 @@ export default function ContactForm() {
   const t = locale === 'bg' ? bg : en
 
   function sendEmail(e) {
-    e.preventDefault();
-   
+    e.preventDefault()
     emailjs.sendForm('service_kf6qods', 'template_hj4vb1k', e.target, 'user_oQNPPzP1WZLr7VTTiqNt5')
       .then((result) => {
           console.log(result.text);
