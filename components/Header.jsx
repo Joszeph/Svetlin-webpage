@@ -28,17 +28,17 @@ const Header = () => {
         <div className="socialIcons">
           <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486">
           <a target="_blank">
-          <Image src='/linkedin.svg' width={30} height={30}/>
+          <Image src='/linkedin.svg' width={30} height={30} alt="social-media-icon-linkedin"/>
           </a>
           </Link>
           <Link href="https://www.facebook.com/todorovlawyer/">
           <a target="_blank">
-          <Image src='/facebook.svg' width={30} height={30}/>
+          <Image src='/facebook.svg' width={30} height={30} alt="social-media-icon-facebook"/>
           </a>
           </Link>
           <Link href="https://www.instagram.com/svetlin1045/">
           <a target="_blank">
-          <Image src='/instagram.svg' width={30} height={30}/>
+          <Image src='/instagram.svg' width={30} height={30} alt="social-media-icon-instagram"/>
           </a>
           </Link>
           {/* <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon></i></a></Link>
