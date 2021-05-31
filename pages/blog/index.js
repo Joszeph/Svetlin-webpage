@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './blog.module.css'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
@@ -45,6 +46,7 @@ const Blog = ({posts}) => {
           <NextSeo {...SEO} />
           <div className={styles.title} data-aos="fade-right">
             <h1>{t.blogTitle}</h1>
+            <Image src="/law-blog-image.webp" alt="Law-Blog-Image" width={1200} height={300}/>
           </div>
             <div className={styles.margin}> 
             {mappedPosts.length ? mappedPosts.map((p, index) => (

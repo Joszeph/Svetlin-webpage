@@ -31,6 +31,7 @@ const t = locale === 'bg' ? bg : en
             <NextSeo {...SEO} />
             <div className={styles.headers} data-aos="fade-right">
             <h1>{t.clientH1}</h1>
+            <Image src="/law-clients-image.webp" alt="Law-Clients-Image" width={1200} height={300}/>
             <p>{t.clientText1}</p>
             <p>{t.clientText2}</p>
             <p>{t.clientText3}</p>
