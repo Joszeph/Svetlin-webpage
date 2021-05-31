@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
     <section className={styles.mainHome}>
-      <Image src="/main_image.png" alt="main-Image-Todorov" width={1920} height={389}/>
+      <Image src="/main_image.webp" alt="main-Image-Todorov" width={1920} height={389} quality={75}/>
       <div className={styles.mainInfo}>
         <div className={styles.info} data-aos="fade-right">
           <h1 className={styles.h1}>
@@ -49,7 +49,7 @@ export default function Home() {
     </section>
     <section className={styles.cards}>
       <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <Image src="/box1.png" alt="box-Image-Todorov" width={300} height={151}/>
+        <Image src="/box1.webp" alt="box-Image-Todorov" width={300} height={151}/>
         <div className={styles.container}>
           <p>
             {t.card1}
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
-        <Image src="/box2.png" alt="box-Image-Todorov2" width={300} height={151}/>
+        <Image src="/box2.webp" alt="box-Image-Todorov2" width={300} height={151}/>
         <div className={styles.container}>
           <p>
           {t.card2}
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.card} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-        <Image src="/box3.png" alt="box-Image-Todorov3" width={300} height={151}/>
+        <Image src="/box3.webp" alt="box-Image-Todorov3" width={300} height={151}/>
         <div className={styles.container}>
           <p>
           {t.card3}
@@ -160,19 +160,19 @@ export default function Home() {
       </div>
       <div className={styles.clientslogos}>
           <div>
-            <Link href="https://esseterre.bg"><a target="_blank"><Image src="/clients-logos/Esseterre-logo.png" alt="Esseterre" width={200} height={100}/></a></Link>
+            <Link href="https://esseterre.bg"><a target="_blank" rel="noopener"><Image src="/clients-logos/Esseterre-logo.png" alt="Esseterre" width={200} height={100}/></a></Link>
           </div>
           <div>
-            <Link href="https://izolacii.bg/"><a target="_blank"><Image src="/clients-logos/izolacii_logo.png" alt="Изолации ЕООД" width={200} height={100}/></a></Link>
+            <Link href="https://izolacii.bg/"><a target="_blank" rel="noopener"><Image src="/clients-logos/izolacii_logo.png" alt="Изолации ЕООД" width={200} height={100}/></a></Link>
           </div>
           <div>
-            <Link href="https://migmarket.bg/"><a target="_blank"><Image src="/clients-logos/logo-MIG-MARKET.png" alt="MIG MARKET" width={200} height={100}/></a></Link>
+            <Link href="https://migmarket.bg/"><a target="_blank" rel="noopener"><Image src="/clients-logos/logo-MIG-MARKET.png" alt="MIG MARKET" width={200} height={100}/></a></Link>
           </div>
           <div>
-            <Link href="http://www.milaflor.bg/"><a target="_blank"><Image src="/clients-logos/logo-suprema.png" alt="Suprema" width={200} height={100}/></a></Link>
+            <Link href="http://www.milaflor.bg/"><a target="_blank" rel="noopener"><Image src="/clients-logos/logo-suprema.png" alt="Suprema" width={200} height={100}/></a></Link>
           </div>
           <div>
-            <Link href="http://stf-bg.com/"><a target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link>
+            <Link href="http://stf-bg.com/"><a target="_blank" rel="noopener"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link>
           </div> 
       </div>
     </section>

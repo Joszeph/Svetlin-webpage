@@ -109,7 +109,7 @@ export default {
   formSubject:'Subject',
   formMsg:'Message',
   formBtn:'Send',
-  logo:'/logoEn.png',
+  logo:'/logoEn.webp',
   //Clients
   clientH1:'Clients',
   clientText1:'Regular clients of attorney Svetlin Todorov were and are currently reputable companies from Varna and the region, including:',

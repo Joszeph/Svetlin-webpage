@@ -11,6 +11,8 @@ class MyDocument extends Document {
             <Html lang="bg">
             <Head>
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="preload"/>
+                <meta name="theme-color" content="#33333"/>
             </Head>
                 <body>
                     <Main/>

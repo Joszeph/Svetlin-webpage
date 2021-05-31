@@ -3,12 +3,14 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   box-sizing: border-box;
   background-color: #f6f6f6;
   font-family: "Comfortaa", cursive;
+  font-display: optional;
 }
 
 h1 {

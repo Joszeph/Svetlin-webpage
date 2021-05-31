@@ -39,17 +39,17 @@ const Footer = () => {
         <div className={styles.footerRight}>
           <div className={styles.socialIcons}>
           <Link href="https://bg.linkedin.com/in/svetlin-todorov-7246b486">
-          <a target="_blank">
+          <a target="_blank" rel="noopener">
           <Image src='/linkedinFooter.svg' width={30} height={30} alt="social-media-icon-linkedin"/>
           </a>
           </Link>
           <Link href="https://www.facebook.com/todorovlawyer/">
-          <a target="_blank">
+          <a target="_blank" rel="noopener">
           <Image src='/facebookFooter.svg' width={30} height={30} alt="social-media-icon-facebook"/>
           </a>
           </Link>
           <Link href="https://www.instagram.com/svetlin1045/">
-          <a target="_blank">
+          <a target="_blank" rel="noopener">
           <Image src='/instagramFooter.svg' width={30} height={30} alt="social-media-icon-instagram"/>
           </a>
           </Link>
