@@ -13,6 +13,10 @@ class MyDocument extends Document {
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="preload"/>
                 <meta name="theme-color" content="#33333"/>
+                <meta property="og:image" content="/logo.png"/>
+                <meta property="og:image:type" content="image/png"/>
+                <meta property="og:image:width" content="228"/>
+                <meta property="og:image:height" content="122"/>
             </Head>
                 <body>
                     <Main/>
