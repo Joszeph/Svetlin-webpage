@@ -74,7 +74,7 @@ const changeLanguage = (e) => {
             @media only screen and (max-width: 600px) {
                 .switch-field {
                     display: flex;
-                    // margin: 0px 7px 35px 0;
+                    margin: 10px 7px 35px 0;
                     overflow: hidden;
                 }
             }
