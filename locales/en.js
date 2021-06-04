@@ -113,7 +113,7 @@ export default {
   //Clients
   clientH1:'Clients',
   clientText1:'Regular clients of attorney Svetlin Todorov were and are currently reputable companies from Varna and the region, including:',
-  clientText2:'To protect the rights and their legitimate interests of Atty. Svetlin Todorov was trusted by schools such as the 4th Language High School - Varna, St. St. Kliment and Metodiy Primary School - Varna and Hristo Botev Primary School - Suvorovo Municipality.',
+  clientText2:'To protect the rights and their legitimate interests of Atty. Svetlin Todorov was trusted by schools such as the 4th Language High School - Varna, St. St. Kliril and Metodiy Primary School - Varna and Hristo Botev Primary School - Suvorovo Municipality.',
   clientText3:'Lawyer Svetlin Todorov works in close cooperation with the lawyers from the Law Firm "Ralchevi, Stanev and Dzhambazova".',
   divClients1h1:'ESSETERRE',
   divClients2h1:'Isolation',
