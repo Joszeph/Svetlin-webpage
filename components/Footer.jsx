@@ -58,7 +58,7 @@ const Footer = () => {
           <Link href="https://www.instagram.com/svetlin1045/"><a target="_blank"><i><FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon></i></a></Link> */}
           </div>
           <h4>Copyright 2021<br/> <span>&#169;</span>{t.footerName}</h4>
-          <h5>Web Development by Mighty Mint</h5>
+          <h5><a href="mailto:iodesign@live.com" style={{textDecoration:'none', color:'white'}}>Web Development by Mighty Mint</a></h5>
         </div>
       </div>
       <div className={styles.footerLine}></div>
