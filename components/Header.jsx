@@ -99,7 +99,7 @@ const Header = () => {
           justify-content: space-around;
         }
         .socialIcons{
-          margin: -34px 0px 8px 4px;
+          margin: -34px 0px 8px 16px;
           align-self: end;
         }
       
