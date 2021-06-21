@@ -1,6 +1,6 @@
 export default {
     title: "Адвокат Светлин Тодоров | Адвокатска Кантора Варна",
-    description: "Страница на Адвокат Светлин Тодоров",
+    description: "Адвокат Светлин Тодоров, Адвокатска Кантора Варна",
     openGraph:{
         type: 'website',
         locale: 'bg_BG',
