@@ -82,6 +82,24 @@ console.log(posts)
               <h6>Дата: 2/2/2014</h6>
             </div>
           </div>
+          <div className={styles.margin}> 
+            <div className={styles.post} data-aos="zoom-in-up">
+              <h3>Terms and conditions under which a foreigner, who is not a citizen of a country – member of EU may enter and reside in Republic of Bulgaria on a prolonged, long – term or permanent basis.</h3>
+              <Link href="https://www.todorovlaw.com/post/terms-and-conditions-under-which-a-foreigner-who-is-not-a-citizen-of-a-country-member-of-eu-may">
+             <a> <button className={styles.postBtn} className={styles.post}>прочети...</button> </a>
+              </Link>
+              <h6>Дата: 2/2/2014</h6>
+            </div>
+          </div>
+          <div className={styles.margin}> 
+            <div className={styles.post} data-aos="zoom-in-up">
+              <h3>I have been sentenced and imprisoned in Bulgaria. How can I apply for a prison transfer to the UK? What do I need to know before applying?</h3>
+              <Link href="https://www.todorovlaw.com/post/i-have-been-sentenced-and-imprisoned-in-bulgaria-how-can-i-apply-for-a-prison-transfer-to-the-uk">
+             <a> <button className={styles.postBtn} className={styles.post}>прочети...</button> </a>
+              </Link>
+              <h6>Дата: 2/2/2014</h6>
+            </div>
+          </div>
     </main>  
     } 
     </>
