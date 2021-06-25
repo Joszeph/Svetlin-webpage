@@ -77,27 +77,27 @@ console.log(posts)
             <div className={styles.post} data-aos="zoom-in-up">
               <h3>How long someone can be kept in detention without charges being pressed against him/her? I have been detained. What are my rights with regards to access to legal representation, interpretation and consular support from my embassy? Should I sign any statements or declarations before having spoken to a legal representative?</h3>
               <Link href="https://www.todorovlaw.com/post/how-long-someone-can-be-kept-in-detention-without-charges-being-pressed-against-him-her-i-have">
-             <a> <button className={styles.postBtn} className={styles.post}>прочети...</button> </a>
+             <a> <button className={styles.postBtn} className={styles.post}>read more...</button> </a>
               </Link>
-              <h6>Дата: 2/2/2014</h6>
+              <h6>Date: 2/2/2014</h6>
             </div>
           </div>
           <div className={styles.margin}> 
             <div className={styles.post} data-aos="zoom-in-up">
               <h3>Terms and conditions under which a foreigner, who is not a citizen of a country – member of EU may enter and reside in Republic of Bulgaria on a prolonged, long – term or permanent basis.</h3>
               <Link href="https://www.todorovlaw.com/post/terms-and-conditions-under-which-a-foreigner-who-is-not-a-citizen-of-a-country-member-of-eu-may">
-             <a> <button className={styles.postBtn} className={styles.post}>прочети...</button> </a>
+             <a> <button className={styles.postBtn} className={styles.post}>read more...</button> </a>
               </Link>
-              <h6>Дата: 2/2/2014</h6>
+              <h6>Date: 2/2/2014</h6>
             </div>
           </div>
           <div className={styles.margin}> 
             <div className={styles.post} data-aos="zoom-in-up">
               <h3>I have been sentenced and imprisoned in Bulgaria. How can I apply for a prison transfer to the UK? What do I need to know before applying?</h3>
               <Link href="https://www.todorovlaw.com/post/i-have-been-sentenced-and-imprisoned-in-bulgaria-how-can-i-apply-for-a-prison-transfer-to-the-uk">
-             <a> <button className={styles.postBtn} className={styles.post}>прочети...</button> </a>
+             <a> <button className={styles.postBtn} className={styles.post}>read more...</button> </a>
               </Link>
-              <h6>Дата: 2/2/2014</h6>
+              <h6>Date: 2/2/2014</h6>
             </div>
           </div>
     </main>  
