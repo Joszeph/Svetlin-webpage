@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './blog.module.css'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
@@ -21,8 +22,10 @@ const Blog = ({posts}) => {
     }
 }
 
-  const router = useRouter();
-  const [mappedPosts, setMappedPosts] = useState([]);
+  const router = useRouter()
+  const [mappedPosts, setMappedPosts] = useState([])
+
+console.log(posts)
 
   useEffect(() => {
     if (posts.length) {
@@ -41,8 +44,12 @@ const Blog = ({posts}) => {
   const { locale } = router
   const t = locale === 'bg' ? bg : en
 
-    return ( 
-        <main className={styles.container}>
+  
+
+  return ( 
+    <>
+    {locale === 'bg'? 
+      <main className={styles.container}>
           <NextSeo {...SEO} />
           <div className={styles.title} data-aos="fade-right">
             <h1>{t.blogTitle}</h1>
@@ -57,20 +64,37 @@ const Blog = ({posts}) => {
             </div>
           )) : <div className={styles.loading}>{t.loading}</div>}
             </div>
-        </main>
-     );
+      </main>
+    : 
+    <main className={styles.container}>
+     {/* English version */}
+      <NextSeo {...SEO} />
+          <div className={styles.title} data-aos="fade-right">
+            <h1>{t.blogTitle}</h1>
+            <Image src="/law-blog-image.webp" alt="Law-Blog-Image" width={1200} height={300}/>
+          </div>
+          <div className={styles.margin}> 
+            <div className={styles.post} data-aos="zoom-in-up">
+              <h3>How long someone can be kept in detention without charges being pressed against him/her? I have been detained. What are my rights with regards to access to legal representation, interpretation and consular support from my embassy? Should I sign any statements or declarations before having spoken to a legal representative?</h3>
+              <Link href="https://www.todorovlaw.com/post/how-long-someone-can-be-kept-in-detention-without-charges-being-pressed-against-him-her-i-have">
+             <a> <button className={styles.postBtn} className={styles.post}>прочети...</button> </a>
+              </Link>
+              <h6>Дата: 2/2/2014</h6>
+            </div>
+          </div>
+    </main>  
+    } 
+    </>
+    )
 }
 
 
 export const getServerSideProps = async pageContext => {
-  const query = encodeURIComponent('*[ _type == "post" ]|order(publishedAt desc)[]');
-  const url = `https://83rj43sn.api.sanity.io/v1/data/query/production?query=${query}`;
+
+  // const query = encodeURIComponent('*[ _type == "post" && text match "а" ]|order(publishedAt desc)[]')
+  const query = encodeURIComponent('*[_type == "post" && author._ref in *[_type=="author" && name=="Светлин Тодоров"]._id ]|order(publishedAt desc){...}')
+  const url = `https://83rj43sn.api.sanity.io/v1/data/query/production?query=${query}`
   const result = await fetch(url).then(res => res.json());
-
-
-  // if(route === en){
-    
-  // }
 
  
   if (!result.result || !result.result.length) {
@@ -86,6 +110,7 @@ export const getServerSideProps = async pageContext => {
       }
     }
   }
-};
- 
-export default Blog;
+}
+
+
+export default Blog
