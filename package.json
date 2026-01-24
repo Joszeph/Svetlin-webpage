@@ -10,9 +10,8 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.14",
     "@googlemaps/js-api-loader": "^1.11.4",
     "@sanity/block-content-to-react": "^3.0.0",
     "aos": "^2.3.4",
