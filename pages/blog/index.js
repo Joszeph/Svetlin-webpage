@@ -60,7 +60,7 @@ console.log(posts)
             <div className={styles.post} data-aos="zoom-in-up">
               <h3>{p.title}</h3>
               <button className={styles.postBtn} onClick={() => router.push(`/post/${p.slug.current}`)} key={index} className={styles.post}>прочети...</button>
-              <h6>Дата: {new Date(p.publishedAt).toLocaleDateString()}</h6>
+              <h6>Дата: {new Date(p.publishedAt).toLocaleDateString('bg-BG')}</h6>
             </div>
           )) : <div className={styles.loading}>{t.loading}</div>}
             </div>

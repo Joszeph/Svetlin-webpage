@@ -73,7 +73,11 @@ const Activities = () => {
                     <h2>{t.actH1e}</h2>
                 </div>
                 <div data-aos="zoom-in-up">
-                <h2>{t.actH1f}</h2>
+                <h2 style={{color:"red"}}>{t.actH1f}</h2>
+                 <ul>
+                        <li>{t.actU1Li1}</li>
+                        <li>{t.actU1Li2}</li>
+                    </ul>
                 </div>
                 <div data-aos="zoom-in-up">
                 <h2>{t.actH1g}</h2>
@@ -102,12 +106,12 @@ const Activities = () => {
                         <li>{t.actUlk2}</li>
                     </ul>
             </div>
-                <div data-aos="zoom-in-up">
+                {/* <div data-aos="zoom-in-up">
                     <h2>{t.actH1l}</h2>
                     <ul>
                         <li>{t.actUll1}</li>
                     </ul>
-                </div>
+                </div> */}
                 <div data-aos="zoom-in-up">
                 <h2>{t.actH1n}</h2>
                 <ul>

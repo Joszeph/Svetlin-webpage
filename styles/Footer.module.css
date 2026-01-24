@@ -14,6 +14,10 @@
     line-height: 30px;
     padding: 40px 0;
   }
+
+  .footerLeft h3{
+    font-style: normal;
+  }
   
   .footerLeft a {
     color: #f6f6f6;

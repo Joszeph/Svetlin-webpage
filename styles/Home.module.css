@@ -31,7 +31,7 @@
 
 .btn a:hover{
   color:#f20f0f;
- 
+  transition: 1s;
 }
 
 .btn>button {
@@ -78,7 +78,10 @@
   width: 300px;
   background-color: #f6f6f6;
   color: #070707;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  transition: 1s;
+  border-bottom: 2px solid red;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1); */
 }
 
 /* Activities */
@@ -163,11 +166,19 @@
 
 .contentParSection button {
   margin-top: 35px;
+  color:white;
+  transition: 1s;
+}
+
+.contentParSection button:hover {
+
+ color:#f20f0f;
+
 }
 
 .contentParSection a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 .contentParSection a:hover {
@@ -188,6 +199,7 @@
 .btnInfoPar:hover {
   text-transform: uppercase;
   background-color: transparent;
+  transition: 1s;
   color: #f20f0f;
   border: 1px solid #f20f0f;
   padding: 12px 10px;

@@ -6,10 +6,12 @@ const Post = ({title, body, publishedAt})=>{
     return(
         <div className="container">
             <h2>{title}</h2>
+            <br/>
             <div>
             <BlockContent blocks={body} />
             </div>
-            <h6>Дата: {new Date(publishedAt).toLocaleDateString()}</h6>
+            <br/>
+            <h6>Дата: {new Date(publishedAt).toLocaleDateString('bg-BG')}</h6>
             <div className="link"><Link href="/blog"><a>Обратно</a></Link></div>
             <style jsx>{`
             .container{

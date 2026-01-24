@@ -33,39 +33,34 @@ const t = locale === 'bg' ? bg : en
             <h1>{t.clientH1}</h1>
             <Image src="/law-clients-image.webp" alt="Law-Clients-Image" width={1200} height={300}/>
             <p>{t.clientText1}</p>
-            <p>{t.clientText2}</p>
-            <p>{t.clientText3}</p>
+            {/* <p>{t.clientText2}</p>
+            <p>{t.clientText3}</p> */}
             </div>
             <section className={styles.clientList}>
-                <div className={styles.divClients1} data-aos="fade-up">
-                    <div><Link href="https://esseterre.bg"><a target="_blank"><Image src="/clients-logos/Esseterre-logo.png" alt="Esseterre" width={200} height={100}/></a></Link></div>
+                   <div className={styles.divClients5} data-aos="fade-up">
+                    <div><Link href="https://plastchim-t.com/"><a target="_blank"><Image src="/clients-logos/plastchim-t.png" alt="Пластхим-Т" width={200} height={100}/></a></Link></div>
                     <div className={styles.clinetText}>
-                        <h2>{t.divClients1h1}</h2>
-                        <p>{t.divClientsP1}</p>
+                    <h2> {t.divClients2h1}</h2>
+                        <p>{t.divClientsP2}</p>
                     </div>
                 </div>
-                <div className={styles.divClients2} data-aos="fade-up">
-                    <div><Link href="https://izolacii.bg/"><a target="_blank"><Image src="/clients-logos/izolacii_logo.png" alt="Изолации ЕООД" width={200} height={100}/></a></Link></div>
+
+                <div className={styles.divClients5} data-aos="fade-up">
+                    <div><Link href="https://www.maichindom-varna.com/"><a target="_blank"><Image src="/clients-logos/maichin-dom-varna.png" alt="Медицински комплекс Майчин дом" width={200} height={100}/></a></Link></div>
                     <div className={styles.clinetText}>
-                    <h2>{t.divClients2h1}</h2>
-                        <p>{t.divClientsP2}
-                        </p>
-                    </div>
-                </div>
-                <div className={styles.divClients3} data-aos="fade-up">
-                    <div><Link href="https://migmarket.bg/"><a target="_blank"><Image src="/clients-logos/logo-MIG-MARKET.png" alt="MIG MARKET" width={200} height={100}/></a></Link></div>
-                    <div className={styles.clinetText}>
-                    <h2>{t.divClients3h1}</h2>
+                    <h2> {t.divClients3h1}</h2>
                         <p>{t.divClientsP3}</p>
                     </div>
                 </div>
-                <div className={styles.divClients4} data-aos="fade-up">
-                    <div><Link href="http://www.milaflor.bg/"><a target="_blank"><Image src="/clients-logos/logo-suprema.png" alt="Suprema" width={200} height={100}/></a></Link></div>
+             
+                 <div className={styles.divClients5} data-aos="fade-up">
+                    <div><Link href="https://mtgdolphin.bg/"><a target="_blank"><Image src="/clients-logos/mtg-dolphin.png" alt="МТГ Делфин" width={200} height={100}/></a></Link></div>
                     <div className={styles.clinetText}>
                     <h2> {t.divClients4h1}</h2>
                         <p>{t.divClientsP4}</p>
                     </div>
                 </div>
+                
                 <div className={styles.divClients5} data-aos="fade-up">
                     <div><Link href="http://stf-bg.com/"><a target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link></div>
                     <div className={styles.clinetText}>
@@ -73,6 +68,7 @@ const t = locale === 'bg' ? bg : en
                         <p>{t.divClientsP5}</p>
                     </div>
                 </div>
+
             </section>
         </main>
      );

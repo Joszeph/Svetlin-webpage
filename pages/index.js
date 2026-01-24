@@ -160,19 +160,16 @@ export default function Home() {
       </div>
       <div className={styles.clientslogos}>
           <div>
-            <Link href="https://esseterre.bg"><a target="_blank" rel="noopener"><Image src="/clients-logos/Esseterre-logo.png" alt="Esseterre" width={200} height={100}/></a></Link>
-          </div>
+            <Link href="https://plastchim-t.com/"><a target="_blank"><Image src="/clients-logos/plastchim-t.png" alt="Пластхим-Т" width={200} height={100}/></a></Link>
+          </div> 
           <div>
-            <Link href="https://izolacii.bg/"><a target="_blank" rel="noopener"><Image src="/clients-logos/izolacii_logo.png" alt="Изолации ЕООД" width={200} height={100}/></a></Link>
-          </div>
+           <Link href="https://www.maichindom-varna.com/"><a target="_blank"><Image src="/clients-logos/maichin-dom-varna.png" alt="Медицински комплекс Майчин дом" width={200} height={100}/></a></Link>
+          </div> 
           <div>
-            <Link href="https://migmarket.bg/"><a target="_blank" rel="noopener"><Image src="/clients-logos/logo-MIG-MARKET.png" alt="MIG MARKET" width={200} height={100}/></a></Link>
-          </div>
+           <Link href="https://mtgdolphin.bg/"><a target="_blank"><Image src="/clients-logos/mtg-dolphin.png" alt="МТГ Делфин" width={200} height={100}/></a></Link>
+          </div> 
           <div>
-            <Link href="http://www.milaflor.bg/"><a target="_blank" rel="noopener"><Image src="/clients-logos/logo-suprema.png" alt="Suprema" width={200} height={100}/></a></Link>
-          </div>
-          <div>
-            <Link href="http://stf-bg.com/"><a target="_blank" rel="noopener"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link>
+            <Link href="http://stf-bg.com/"><a target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link>
           </div> 
       </div>
     </section>
