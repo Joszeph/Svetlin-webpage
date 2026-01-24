@@ -4,8 +4,8 @@ import { useRouter } from 'next/router'
 import Navbar from './Nav/NavBar'
 import LangSwitch from '../components/LangSwitch'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faFacebookSquare,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 import bg from '../locales/bg'

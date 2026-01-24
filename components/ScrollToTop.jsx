@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCaretSquareUp} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {faCaretSquareUp} from "@fortawesome/free-solid-svg-icons";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);

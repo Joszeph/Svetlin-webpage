@@ -6,8 +6,8 @@ import styles from '../styles/Footer.module.css'
 import bg from '../locales/bg'
 import en from '../locales/en'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faFacebookSquare,faInstagram,faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-import emailjs from "@emailjs/browser";
+import emailjs from 'emailjs-com';
 import styles from '../styles/ContactForm.module.css'
 
 import "aos/dist/aos.css";

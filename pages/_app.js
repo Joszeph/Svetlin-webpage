@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo {...SEO} />
     <Layout>
       <Component {...pageProps} />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </Layout>
     </>
   )
