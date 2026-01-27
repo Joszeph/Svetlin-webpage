@@ -77,7 +77,7 @@ const Header = () => {
         }
       
         .navBar {
-          max-width: 1200px;
+          max-width: 1270px;
           margin: 0 auto;
           display: flex;
           justify-content: space-between;
