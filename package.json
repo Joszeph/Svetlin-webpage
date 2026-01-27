@@ -1,4 +1,7 @@
 {
+  "engines": {
+  "node": "18.x"
+},
   "name": "webpage",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +19,6 @@
     "i18next": "^20.2.2",
     "next": "10.2.0",
     "next-seo": "^4.24.0",
-    "node": "^25.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.5.2",
