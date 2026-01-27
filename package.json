@@ -1,13 +1,13 @@
 {
-  "engines": {
-  "node": "24.x"
-},
   "name": "webpage",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
