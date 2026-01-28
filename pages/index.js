@@ -160,16 +160,16 @@ export default function Home() {
       </div>
       <div className={styles.clientslogos}>
           <div>
-            <Link href="https://plastchim-t.com/"><a target="_blank"><Image src="/clients-logos/plastchim-t.png" alt="Пластхим-Т" width={200} height={100}/></a></Link>
+            <Link href="https://plastchim-t.com/"><a href="https://plastchim-t.com/" target="_blank"><Image src="/clients-logos/plastchim-t.png" alt="Пластхим-Т" width={200} height={100}/></a></Link>
           </div> 
           <div>
-           <Link href="https://www.maichindom-varna.com/"><a target="_blank"><Image src="/clients-logos/maichin-dom-varna.png" alt="Медицински комплекс Майчин дом" width={200} height={100}/></a></Link>
+           <Link href="https://www.maichindom-varna.com/"><a href="https://www.maichindom-varna.com/" target="_blank"><Image src="/clients-logos/maichin-dom-varna.png" alt="Медицински комплекс Майчин дом" width={200} height={100}/></a></Link>
           </div> 
           <div>
-           <Link href="https://mtgdolphin.bg/"><a target="_blank"><Image src="/clients-logos/mtg-dolphin.png" alt="МТГ Делфин" width={200} height={100}/></a></Link>
+           <Link href="https://mtgdolphin.bg/"><a href="https://mtgdolphin.bg/" target="_blank"><Image src="/clients-logos/mtg-dolphin.png" alt="МТГ Делфин" width={200} height={100}/></a></Link>
           </div> 
           <div>
-            <Link href="http://stf-bg.com/"><a target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link>
+            <Link href="http://stf-bg.com/"><a href="http://stf-bg.com/" target="_blank"><Image src="/clients-logos/tehnicheski-flot-logo.png" alt="Строителен итехнически флот АД" width={200} height={90}/></a></Link>
           </div> 
       </div>
     </section>
