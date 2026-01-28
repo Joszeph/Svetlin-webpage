@@ -36,7 +36,8 @@ export default function ScrollToTop() {
       {isVisible && (
         <div onClick={scrollToTop}>
           <a>
-          <i><FontAwesomeIcon icon={faCaretSquareUp}></FontAwesomeIcon></i>
+            Scroll to Top
+          {/* <i><FontAwesomeIcon icon={faCaretSquareUp}></FontAwesomeIcon></i> */}
           </a>
         </div>
       )}
