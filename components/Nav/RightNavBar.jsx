@@ -28,20 +28,23 @@ const Ul = styled.ul`
   @media only screen and (max-width: 1239px) {
     flex-flow: column;
     background-color: #8d8d8deb;
-    position: fixed;
+    position: absolute;
     
     z-index:1;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0px;
     right: 0;
-    height: 100vh;
-    width: 40vh;
+    height: 107vh;
+    width: 64vh;
     padding-top:160px;
     transition: transform 0.3s ease-in-out;
     li {
       display:flex;
       color: #fff;
     }  
+    li a{
+    margin: 0px; 
+  }
   }
 `;
 
