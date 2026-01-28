@@ -53,7 +53,7 @@ console.log(posts)
           <NextSeo {...SEO} />
           <div className={styles.title} data-aos="fade-right">
             <h1>{t.blogTitle}</h1>
-            <Image src="/law-blog-image.webp" alt="Law-Blog-Image" width={1200} height={300}/>
+            <Image src="/law-blog-image.webp" alt="Law-Blog-Image" width={1200} height={300} style={{ width: "100%", height: "auto" }} />
           </div>
             <div className={styles.margin}> 
             {mappedPosts.length ? mappedPosts.map((p, index) => (
