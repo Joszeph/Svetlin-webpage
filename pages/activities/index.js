@@ -30,7 +30,7 @@ const Activities = () => {
             <NextSeo {...SEO} />
             <section className={styles.activities}>
                 <h1 className={styles.h1} data-aos="fade-right">{t.activH1Title}</h1>
-                <Image src="/activities_image.webp" alt="Practice-Image" width={1200} height={300} />
+                <Image src="/activities_image.webp" alt="Practice-Image" width={1200} height={300} style={{ width: "100%", height: "auto" }}/>
             </section>
             <section className={styles.texts}>
                 <div data-aos="zoom-in-up">
