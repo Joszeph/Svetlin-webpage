@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
     <section className={styles.mainHome}>
-      <Image src="/main_image.webp" alt="main-Image-Todorov" width={1920} height={389} />
+      <Image src="/main_image.webp" alt="main-Image-Todorov" width={1920} height={389} style={{ width: "100%", height: "auto" }}/>
       <div className={styles.mainInfo}>
         <div className={styles.info} data-aos="fade-right">
           <h1 className={styles.h1}>
