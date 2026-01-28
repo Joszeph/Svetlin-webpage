@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Image from 'next/image'
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {faCaretSquareUp} from "@fortawesome/free-solid-svg-icons";
@@ -36,8 +37,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <div onClick={scrollToTop}>
           <a>
-            Scroll to Top
-          {/* <i><FontAwesomeIcon icon={faCaretSquareUp}></FontAwesomeIcon></i> */}
+             <Image src='/arrowUp.png' width={30} height={30} alt="Scroll-to-top"/>        
           </a>
         </div>
       )}
