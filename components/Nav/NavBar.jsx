@@ -13,6 +13,11 @@ a spam{
     font-weight:bold;
     font-size:30px;
 }
+@media (max-width: 1239px) {
+    a{
+  padding: 16px 0;
+}
+  }
 `
 
 const Navbar = () => {
