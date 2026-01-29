@@ -6,7 +6,7 @@ const NavigationBar = styled.nav`
   background-color: transperent;
   display: flex;
 a{
-  padding: 16px 0;
+  padding: 20px 0;
 }
 a spam{
     color: #333333;
