@@ -30,7 +30,7 @@ const Ul = styled.ul`
     background-color: #8d8d8deb;
     position: fixed;
     margin: 0px !important;
-    font-size: 0.9em !important;
+    font-size: 0.9em;
     z-index:1;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0px;
