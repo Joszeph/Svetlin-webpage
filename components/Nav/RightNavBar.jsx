@@ -9,6 +9,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
+
   li a{
     list-style-type: none;
     text-transform: uppercase;
@@ -18,6 +19,7 @@ const Ul = styled.ul`
     font-weight: bold;
     color: #333333;
   }
+
   li a:hover{
     color: #f20f0f;
   }
@@ -25,34 +27,35 @@ const Ul = styled.ul`
   .active a{
     color:#f20f0f;
   }
-  @media only screen and (device-width: 1230px) and (orientation: landscape) {
-        width: 37vh;
-        margin: 0px !important;
-        font-size: 0.5em !important;
-}
-  
+
+  /* ✅ MOBILE + TABLET (portrait & landscape) */
   @media only screen and (max-width: 1239px) {
     flex-flow: column;
     background-color: #8d8d8deb;
     position: fixed;
     margin: 0px !important;
     font-size: 0.9em;
-    z-index:1;
+    z-index: 1;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0px;
     right: 0;
     height: 100vh;
-    width: 40vh;
-    padding-top:100px;
+    width: 40vw; /* ✅ вместо vh */
+    padding-top: 100px;
     transition: transform 0.3s ease-in-out;
+
     li {
-      display:flex;
+      display: flex;
       color: #fff;
-    }  
+    }
   }
 
-
-  
+  /* ✅ LANDSCAPE MODE (телефони) */
+  @media only screen and (max-width: 900px) and (orientation: landscape) {
+    width: 30vw;
+    font-size: 0.75em !important;
+    padding-top: 60px;
+  }
 `;
 
 const RightNavBar = (props) => {
@@ -62,18 +65,47 @@ const RightNavBar = (props) => {
   const { locale } = router
   const t = locale === 'bg' ? bg : en
 
-  const{open, setOpen} = props
+  const { open, setOpen } = props
 
   return (
     <Ul open={open}>
-      <li className={router.pathname == "/" ? "active" : ""}><Link href="/" ><a onClick={() => setOpen(!open)}>{t.menuHome}</a></Link></li>
-      <li className={router.pathname == "/about" ? "active" : ""}><Link href="/about"><a onClick={() => setOpen(!open)}>{t.menuAbout}</a></Link></li>
-      <li className={router.pathname == "/activities" ? "active" : ""}><Link href="/activities"><a onClick={() => setOpen(!open)}>{t.menuPractice}</a></Link></li>
-      <li className={router.pathname == "/clients" ? "active" : ""}><Link href="/clients"><a onClick={() => setOpen(!open)}>{t.menuClients}</a></Link></li>
-      <li className={router.pathname == "/blog" ? "active" : ""}><Link href="/blog"><a onClick={() => setOpen(!open)}>{t.menuLegalBlog}</a></Link></li>
-      <li className={router.pathname == "/contacts" ? "active" : ""}><Link href="/contacts"><a onClick={() => setOpen(!open)}>{t.menuContacts}</a></Link></li>
+      <li className={router.pathname == "/" ? "active" : ""}>
+        <Link href="/" >
+          <a onClick={() => setOpen(!open)}>{t.menuHome}</a>
+        </Link>
+      </li>
+
+      <li className={router.pathname == "/about" ? "active" : ""}>
+        <Link href="/about">
+          <a onClick={() => setOpen(!open)}>{t.menuAbout}</a>
+        </Link>
+      </li>
+
+      <li className={router.pathname == "/activities" ? "active" : ""}>
+        <Link href="/activities">
+          <a onClick={() => setOpen(!open)}>{t.menuPractice}</a>
+        </Link>
+      </li>
+
+      <li className={router.pathname == "/clients" ? "active" : ""}>
+        <Link href="/clients">
+          <a onClick={() => setOpen(!open)}>{t.menuClients}</a>
+        </Link>
+      </li>
+
+      <li className={router.pathname == "/blog" ? "active" : ""}>
+        <Link href="/blog">
+          <a onClick={() => setOpen(!open)}>{t.menuLegalBlog}</a>
+        </Link>
+      </li>
+
+      <li className={router.pathname == "/contacts" ? "active" : ""}>
+        <Link href="/contacts">
+          <a onClick={() => setOpen(!open)}>{t.menuContacts}</a>
+        </Link>
+      </li>
     </Ul>
   )
 }
 
-export default RightNavBar
+export default RightNavBar;
