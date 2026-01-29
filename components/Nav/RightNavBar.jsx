@@ -14,7 +14,7 @@ const Ul = styled.ul`
     list-style-type: none;
     text-transform: uppercase;
     text-decoration:none;
-    margin: 0px 10px;
+    margin: 0px 6px;
     font-size: 1.1em;
     font-weight: bold;
     color: #333333;
@@ -40,7 +40,7 @@ const Ul = styled.ul`
     top: 0px;
     right: 0;
     height: 100vh;
-    width: 40vw; /* ✅ вместо vh */
+    width: 48vw; /* ✅ вместо vh */
     padding-top: 100px;
     transition: transform 0.3s ease-in-out;
 
