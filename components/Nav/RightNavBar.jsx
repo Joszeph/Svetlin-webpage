@@ -44,6 +44,13 @@ const Ul = styled.ul`
       color: #fff;
     }  
   }
+
+  @media screen and (device-width: 780px) and (orientation: landscape) {
+        width: 37vh;
+        margin: 0px !important;
+        font-size: 0.5em !important;
+}
+  
 `;
 
 const RightNavBar = (props) => {
