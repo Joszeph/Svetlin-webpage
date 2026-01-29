@@ -15,7 +15,7 @@ const Ul = styled.ul`
     text-transform: uppercase;
     text-decoration:none;
     margin: 0px 6px;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     color: #333333;
   }
@@ -28,7 +28,7 @@ const Ul = styled.ul`
     color:#f20f0f;
   }
 
-  /* ✅ MOBILE + TABLET (portrait & landscape) */
+  /*  MOBILE + TABLET (portrait & landscape) */
   @media only screen and (max-width: 1239px) {
     flex-flow: column;
     background-color: #8d8d8deb;
@@ -40,7 +40,7 @@ const Ul = styled.ul`
     top: 0px;
     right: 0;
     height: 100vh;
-    width: 48vw; /* ✅ вместо vh */
+    width: 48vw; 
     padding-top: 100px;
     transition: transform 0.3s ease-in-out;
 
@@ -50,7 +50,7 @@ const Ul = styled.ul`
     }
   }
 
-  /* ✅ LANDSCAPE MODE (телефони) */
+  /*  LANDSCAPE MODE  */
   @media only screen and (max-width: 900px) and (orientation: landscape) {
     width: 30vw;
     font-size: 0.75em !important;
