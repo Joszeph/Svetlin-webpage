@@ -13,7 +13,7 @@ const Ul = styled.ul`
     list-style-type: none;
     text-transform: uppercase;
     text-decoration:none;
-    margin: 0px;
+    margin: 0px 10px;
     font-size: 1.1em;
     font-weight: bold;
     color: #333333;
@@ -29,6 +29,7 @@ const Ul = styled.ul`
     flex-flow: column;
     background-color: #8d8d8deb;
     position: fixed;
+    margin: 0px;
     font-size: 0.9em;
     z-index:1;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
