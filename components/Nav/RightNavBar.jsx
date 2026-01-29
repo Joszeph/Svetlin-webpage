@@ -14,7 +14,7 @@ const Ul = styled.ul`
     text-transform: uppercase;
     text-decoration:none;
     margin: 0px;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold;
     color: #333333;
   }
