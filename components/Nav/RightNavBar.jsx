@@ -13,8 +13,8 @@ const Ul = styled.ul`
     list-style-type: none;
     text-transform: uppercase;
     text-decoration:none;
-    margin: 0 10px;
-    font-size: 1.1em;
+    margin: 0px;
+    font-size: 0.9em;
     font-weight: bold;
     color: #333333;
   }
@@ -36,7 +36,7 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 40vh;
-    padding-top:160px;
+    padding-top:100px;
     transition: transform 0.3s ease-in-out;
     li {
       display:flex;
