@@ -25,6 +25,12 @@ const Ul = styled.ul`
   .active a{
     color:#f20f0f;
   }
+  @media only screen and (device-width: 1230px) and (orientation: landscape) {
+        width: 37vh;
+        margin: 0px !important;
+        font-size: 0.5em !important;
+}
+  
   @media only screen and (max-width: 1239px) {
     flex-flow: column;
     background-color: #8d8d8deb;
@@ -45,11 +51,7 @@ const Ul = styled.ul`
     }  
   }
 
-  @media screen and (device-width: 780px) and (orientation: landscape) {
-        width: 37vh;
-        margin: 0px !important;
-        font-size: 0.5em !important;
-}
+
   
 `;
 
